@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>榜单</title>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/list.css"/>
+</head>
+<body>
+<div class="header">
+    <h1 class="logo">
+        <a href="">
+            <img src="img/logo.png" alt="青鸟音乐">
+        </a>
+    </h1>
+    <div class="search_input">
+        <label>
+            <input type="text" placeholder="张芸京 偏爱" value="">
+        </label>
+        <div class="search_button">
+            <a href="#">
+                <img src="img/search_icon.png" alt="搜索">
+            </a>
+        </div>
+    </div>
+    <div class="topNav">
+        <ul>
+            <li><a href="#" target="_blank"><span>客服中心</span></a></li>
+            <li><a href="#" target="_blank"><span>广纳贤士</span></a></li>
+            <li><a href="#" target="_blank"><span>商务合作</span></a></li>
+            <li><a href="#" target="_blank"><span>会员中心</span></a></li>
+        </ul>
+        <button type="button" onclick="dianwo()" class="login_button" id="login_button">登录|注册</button>
+        <div class="Popup" id='Popup'>
+            <div class="tankuang">
+                <div id="header">
+                    <div><img src="img/logo.png"/></div>
+                    <div id="header-right" onclick="hidder()">x</div>
+                </div>
+                <div id="article">
+                    <h1>账号密码登录</h1>
+                    <input type="text" name="username"/><br/>
+                    <input type="password" name="password"/><br/>
+                    <input type="submit" value="授权并登录"/>
+                </div>
+                <div id="footer">
+                    <a href="">忘了密码？</a>
+                    <a href="注册.html" target="_blank">注册新账号</a>
+                    <a href="">意见反馈</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            document.getElementById('Popup').style.display="none";
+            function dianwo(){
+                document.getElementById('Popup').style.display="";
+            }
+            function hidder(){
+                document.getElementById('Popup').style.display="none";
+            }
+        </script>
+    </div>
+</div>
+<div class="navWrap">
+    <div class="nav">
+        <ul class="homeNav">
+            <li><a href="首页.html" class="normalOne">首页</a></li>
+            <li><a href="榜单.html" class="normalTwo">榜单</a></li>
+            <li><a href="听书.html" class="normalThree">听书</a></li>
+            <li><a href="下载青鸟.html" class="normalFour">下载青鸟</a></li>
+            <li><a href="听歌识曲.html" class="normalFive">听歌识曲</a></li>
+            <li><a href="#" class="normalSix">更多</a></li>
+        </ul>
+        <ul class="subNav">
+            <li><a href="#"><img src="" alt="">直播</a></li>
+            <li><a href="#"><img src="" alt="">商城</a></li>
+            <li><a href="#"><img src="" alt="">音乐人</a></li>
+            <li><a href="#"><img src="" alt="">代理商</a></li>
+            <li><a href="#"><img src="" alt="">主播电台</a></li>
+            <li><a href="#"><img src="" alt="">开放平台</a></li>
+        </ul>
+    </div>
+</div>
+<div id="quanbu">
+        <div id="b">
+            <h2><img src="image/logo.png"/><a href="#" class="a">播放全部</a></h2>
+        </div>
+
+        <div id="quanxuan">
+            <table>
+                    <input type="checkbox" onclick="swapCheck()"/>全选
+            </table>
+
+            <script type="text/javascript"
+                    src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+            <script type="text/javascript">
+                //checkbox 全选/取消全选
+                var isCheckAll = false;
+                function swapCheck() {
+                    if (isCheckAll) {
+                        $("input[type='checkbox']").each(function() {
+                            this.checked = false;
+                        });
+                        isCheckAll = false;
+                    } else {
+                        $("input[type='checkbox']").each(function() {
+                            this.checked = true;
+                        });
+                        isCheckAll = true;
+                    }
+                }
+            </script>
+        </div>
+            <div id="gedan">
+                <ul>
+                    <li>&nbsp;</li>
+                    <a href="https://www.kugou.com/song-36/15uwc5.html?from_360#hash=6E2EED3B103AF5BC3349A32EFA0A14BC&album_id=3715163" target="_blank" class="b"><li><input type="checkbox" value="1"/><span>1</span>&nbsp;&nbsp;&nbsp;巫启贤 - 只因你伤心</li></a>
+                    <a href="http://bd.kuwo.cn/play_detail/144970079" target="_blank" class="b"> <li><input type="checkbox" value="2" /><span>2</span>&nbsp;&nbsp;&nbsp;DJ - 让我们荡起双桨(DJ版)</li></a>
+                    <a href="http://bd.kuwo.cn/play_detail/148524244?from=baidu" target="_blank" class="b"><li><input type="checkbox" value="3"/><span>3</span>&nbsp;&nbsp;&nbsp;阿悠悠 - 人为情叹(DJ沈念版)</li></a>
+                    <a href="https://www.kugou.com/song-36/k6x175.html?from_360#hash=7F90C597A51614D1874B5A12C32C84A0&album_id=960327" target="_blank" class="b"><li><input type="checkbox" value="4"/>4&nbsp;&nbsp;&nbsp;薛之谦-丑八怪</li></a>
+                    <a href="http://bd.kuwo.cn/play_detail/28879676?from=baidu" target="_blank" class="b"><li><input type="checkbox" value="5"/>5&nbsp;&nbsp;&nbsp;阿吉太组合 - 阿衣莫</li></a>
+                    <a href="https://www.kugou.com/song/#hash=9A34AA59AD6324A7A2F218ED33B38DC1&album_id=47817454" target="_blank" class="b"><li><input type="checkbox" value="5"/>6&nbsp;&nbsp;&nbsp;王小帅 - 怨苍天变了情</li></a>
+                    <a href="https://music.163.com/#/song?id=29418062&autoplay=true&market=baiduhd" target="_blank" class="b"><li><input type="checkbox" value="5"/>7&nbsp;&nbsp;&nbsp;凤凰传奇 - 最炫民族风</li></a>
+                    <a href="https://www.kugou.com/mixsong/5j5t32f5.html?frombaidu#hash=103977EC73B796244157D3A284BEC510&album_id=48465868&album_audio_id=334514558" target="_blank" class="b"><li><input type="checkbox" value="5"/>8&nbsp;&nbsp;&nbsp;半吨兄弟 - 偏爱</li></a>
+                    <a href="http://flitting.cn/?v=94F57E146C0466B1DC484EMB3FBFB912B" target="_blank" class="b"><li><input type="checkbox" value="5"/>9&nbsp;&nbsp;&nbsp;旺仔小乔 - 年轮</li></a>
+                    <a href="https://www.kugou.com/song/1y8wr948.html#hash=8CE417C7485B1E9B750B55ED123DB88F&album_id=48350538" target="_blank" class="b"><li><input type="checkbox" value="5"/>10&nbsp;&nbsp;李乐乐 - 我的城市下着雨</li></a>
+                    <a href="https://www.kugou.com/song/1mpwdf84.html#hash=4D0E2819060C8FEA17501B10F9142E23&album_id=44399028" target="_blank" class="b"><li><input type="checkbox" value="5"/>11&nbsp;&nbsp;雨中百合 - 如果爱还在</li></a>
+                    <a href="https://www.kuwo.cn/play_detail/186246578" target="_blank" class="b"><li><input type="checkbox" value="5"/>12&nbsp;&nbsp;杨小壮 - 最后的人</li></a>
+                    <a href="https://www.kugou.com/mixsong/5h56n231.html?frombaidu#hash=B18D453224097D52798F88399210A2AF&album_id=47771132&album_audio_id=331126238" target="_blank" class="b"><li><input type="checkbox" value="5"/>13&nbsp;&nbsp;海来阿木 - 五十年以后</li></a>
+                    <a href="https://www.kugou.com/mixsong/5eikeh0b.html?frombaidu#hash=D5B96D79E508758C48C709C3D6CB0E5B&album_id=46604517&album_audio_id=326711753" target="_blank" class="b"><li><input type="checkbox" value="5"/>14&nbsp;&nbsp;张鑫雨 - 风雨人生路</li></a>
+                    <a href="http://www.kuwo.cn/play_detail/3514083?from=baidu" target="_blank" class="b"><li><input type="checkbox" value="5"/>15&nbsp;&nbsp;李荣浩 - 李白</li></a>
+                </ul>
+            </div>
+    </div>
+<footer>
+            <div>
+                <div>
+                    <a href="" class="footer_1">关于青鸟</a>&nbsp;|&nbsp;
+                    <a href="" class="footer_1">监督举报</a>&nbsp;|&nbsp;
+                    <a href=""class="footer_1">商务合作</a>&nbsp;|&nbsp;
+                    <a href="" class="footer_1">广告服务</a>&nbsp;|&nbsp;
+                    <a href="" class="footer_1">投诉指引</a>&nbsp;|&nbsp;
+                    <a href="" class="footer_1">隐私政策</a>&nbsp;|&nbsp;
+                    <a href="" class="footer_1">儿童隐私注册</a>&nbsp;|&nbsp;
+                    <a href="" class="footer_1">用户服务协议</a>&nbsp;|&nbsp;
+                    <a href="" class="footer_1">青鸟音乐人</a>&nbsp;|&nbsp;
+                    <a href="" class="footer_1">青鸟直通车</a>&nbsp;|&nbsp;
+                    <a href="" class="footer_1">招聘信息</a>&nbsp;|&nbsp;
+                    <a href="" class="footer_1">客服中心</a>&nbsp;|&nbsp;
+                    <a href="" class="footer_1">用户体验计划</a>
+                </div>
+                <div>
+                    <a href="https://www.kugou.com/ts/album/4094342/" class="footer-2">白眉大侠</a>
+                    <a href="https://www.kugou.com/ts/album/18804082/" class="footer-2">茅山捉鬼人</a>
+                    <a href="https://www.kugou.com/ts/album/2892259/" class="footer-2">夜听FM</a>
+                    <a href="https://www.kugou.com/ts/album/6900644/" class="footer-2">贝瓦故事</a>
+                    <a href="https://www.kugou.com/ts/album/37885807/" class="footer-2">文武贝流行钢琴（1）</a>
+                    <a href="https://www.kugou.com/ts/album/41731833/" class="footer-2">郭德纲</a>
+                    <a href="https://www.kugou.com/ts/album/36794329/" class="footer-2">原创静心舒眠纯音乐</a>
+                    <a href="https://www.kugou.com/ts/album/9236581/" class="footer-2">黑水公园</a>
+                    <a href="https://www.kugou.com/ts/album/9239516/" class="footer-2">舒烟电台</a>
+                    <a href="https://www.kugou.com/ts/album/3035508/" class="footer-2">晚安故事盒子</a>
+                    <a href="https://www.kugou.com/ts/album/24771442/" class="footer-2">哄睡故事</a>
+                    <a href="https://www.kugou.com/ts/album/43730639/" class="footer-2">隋唐演义</a>
+                    <a href="https://www.kugou.com/ts/album/8090766/" class="footer-2">程一电台</a>
+                    <a href="https://www.kugou.com/ts/album/43588726/" class="footer-2">宝宝巴土儿歌</a>
+                    <a href="https://www.kugou.com/ts/album/37690514/" class="footer-2">这首歌，等你来听</a>
+                    <a href="https://www.kugou.com/ts/album/39843428/" class="footer-2">斗罗大陆</a>
+                    <a href="https://www.kugou.com/ts/album/8529420/" class="footer-2">水浒传</a>
+                    <a href="https://www.kugou.com/ts/album/940008/" class="footer-2">星空下的钢琴曲1</a>
+                    <a href="https://www.kugou.com/ts/album/37191013/" class="footer-2">盗墓笔记</a>
+                    <a href="https://www.kugou.com/ts/album/18812582/" class="footer-2">抬棺匠</a>
+                    <a href="https://www.kugou.com/ts/album/3035508/" class="footer-2">晚安故事盒子</a>
+                    <a href="https://www.kugou.com/ts/album/10373617/" class="footer-2">无敌剑域</a>
+                    <a href="https://www.kugou.com/ts/album/39145099/" class="footer-2">治疗师｜3D助眠解压沉浸式音乐</a>
+                    <a href="https://www.kugou.com/ts/album/36517838/" class="footer-2">小猪佩奇</a>
+                    <a href="https://www.kugou.com/ts/album/2470525/" class="footer-2">鬼吹灯经典系列</a>
+                    <a href="https://www.kugou.com/ts/album/40025235/" class="footer-2">上门龙婿</a>
+                    <a href="https://www.kugou.com/ts/album/39570266/" class="footer-2">超牛女婿</a>
+                    <a href="https://www.kugou.com/ts/album/37741217/" class="footer-2">奇葩修真天才</a>
+                    <a href="https://www.kugou.com/ts/album/37014995/" class="footer-2">治愈失眠:雷雨声</a>
+                    <a href="https://www.kugou.com/ts/album/1078813/" class="footer-2">蕊希电台</a>
+                    <a href="https://www.kugou.com/zt/0004/" class="footer-2">成语故事专题</a>
+                    <a href="https://www.kugou.com/zt/0005/" class="footer-2">儿童故事专题</a>
+                    <a href="https://www.kugou.com/zt/0006/" class="footer-2">鬼吹灯专题</a>
+                </div>
+                <div>
+                    <p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@kugou.com</p>
+
+                    <p>信息网络传播视听节目许可证 ××××××× 增值电信业务经营许可证豫××-××××××××</p>
+
+                    <p>广播电视节目许可证（豫）字第××××号  营业性演出许可证穗天演440106025  营业执照</p>
+
+                    <p>穗公网监备案证第440106500101167  互联网药品信息服务资格证编号（豫）-非经营性-2021-0018  豫公网备案  5646121551455465</p>
+
+                    <p>互联网不良信息举报中心：www.12377.cn    酷狗不良信息举报邮箱：jubao_music@kugou.net    客服邮箱：kefu@kugou.com</p>
+
+                    <p>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2004-2021 KuGou-Inc.All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

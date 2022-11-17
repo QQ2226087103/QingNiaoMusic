@@ -1,0 +1,525 @@
+/*主页*/
+.mainPage{
+    background-color: white;
+    margin:0 auto;
+    position:relative;
+}
+
+/*滑块*/
+.slider{
+    width:1800px;
+    height:520px;
+    margin:0 auto;
+    vertical-align: middle;
+    animation:logo 50s linear infinite;
+}
+/*动画*/
+@keyframes logo{
+    0%{
+        width:1500px;
+        background:url("../img/slider/周深.png") no-repeat;
+        transform:translate(100px 100px);
+    }
+    20%{
+        width:1500px;
+        background:url("../img/slider/张杰.png") no-repeat;
+        transform:translate(100px 100px);
+    }
+    40%{
+        width:1500px;
+        background:url("../img/slider/刘珂矣.png") no-repeat;
+        transform:translate(100px 100px);
+    }
+    60%{
+        width:1500px;
+        background:url("../img/slider/封茗囧菌.png") no-repeat;
+        transform:translate(100px 100px);
+    }
+    80%{
+        width:1500px;
+        background:url("../img/slider/金润吉.png") no-repeat;
+        transform:translate(100px 100px);
+    }
+    100%{
+        width:1500px;
+        background:url("../img/slider/王倩雯.png") no-repeat;
+        transform:translate(100px 100px);
+    }
+}
+/*下载模糊*/
+.downloadBlur{
+    width:auto;
+    height:80px;
+    background: rgba(0,0,0,0.4);
+    /*background-image: linear-gradient(to  right,cyan,white);*/
+    margin: auto;
+    vertical-align: middle;
+}
+.download{
+    /*position:relative;*/
+    /*display: inline-block;*/
+    width:1500px;
+    height:100px;
+    margin:0 auto;
+    /*background: red;*/
+}
+.download li{
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    top:10px;
+    float:left;
+    margin:20px auto;
+    padding:0 180px;
+    vertical-align:middle;
+    text-align: center;
+    font-size:20px;
+}
+.download li a{
+    position: relative;
+    top:-8px;
+    color:white;
+}
+.download a:hover{
+    color:rgb(50,200,220);
+}
+/*内容*/
+.content{
+    position:relative;
+    width:1000px;
+    height:3105px;
+    margin:0 auto;
+    background: white;
+}
+.content span{
+    color:rgb(50,200,220);
+    font-size:60px;
+}
+/*更多*/
+.M1{
+    position: absolute;
+    display: inline-block;
+    float: right;
+    bottom: 35%;
+    right:0;
+}
+.selectSongList{
+    /*display:inline-block;*/
+    width:680px;
+    height:400px;
+    background: white;
+}
+.selectTittle{
+    width:680px;
+    height:100px;
+    background: white;
+    /*text-align: center;*/
+    font:normal bold 40px Verdana,"新宋体";
+    position: relative;
+    /*display: inline-block;*/
+    /*float: left;*/
+    /*bottom:0;*/
+    /*left:0;*/
+}
+.selectContent li{
+    color:white;
+    margin:7px 5px 8px 5px;
+    display: inline-block;
+    float:left;
+}
+.selectContent li img{
+    cursor: pointer;
+    transition: all 0.5s; /* 所有的属性变化在0.5s的时间段内完成 */
+}
+.selectContent li img:hover{
+    transform: scale(1.05); /* 鼠标放到图片上的时候图片按比例放大1.5倍   */
+}
+.hotSongList{
+    position:absolute;
+    top:0;
+    right:0;
+    width:300px;
+    height:400px;
+    background: white;
+}
+.topTittle{
+    width:300px;
+    height:100px;
+    background: white;
+    text-align: center;
+    font:normal bold 40px Verdana,"新宋体";
+    position: relative;
+}
+.topContent{
+    margin:5px 2px;
+    list-style-type: none;
+}
+.topContent img{
+    cursor: pointer;
+    transition: all 0.5s; /* 所有的属性变化在0.5s的时间段内完成 */
+}
+.topContent img:hover{
+    transform: scale(1.05); /* 鼠标放到图片上的时候图片按比例放大1.5倍   */
+    box-shadow: 0 0 2px ;rgb(0 0 0 / 1%);
+
+}
+.newSongs{
+    /*display:inline-block;*/
+    width:680px;
+    height:600px;
+    background: white;
+}
+.newTittle{
+    width:680px;
+    height:100px;
+    background: white;
+    /*text-align: center;*/
+    font:normal bold 40px Verdana,"新宋体";
+    position: relative;
+    border-bottom: 1px solid gray;
+}
+.S1,.S2,.S3,.S4,.S5,.S6,.S7,.S8,.S9,
+.S10,.S11,.S12,.S13,.S14,.S15,.S16{
+    color:black;
+    font-size:10px;
+    text-indent: 1em;
+    line-height: 29px;
+    border:1px solid transparent;
+    background: white;
+}
+.newContent a div:hover{
+    background: rgba(210,210,210,1);
+    color:rgb(50,200,220);
+}
+.MVRecommend{
+    position:absolute;
+    top:600px;
+    right:0;
+    width:300px;
+    height:600px;
+    background: white;
+}
+.MVTittle{
+    width:300px;
+    height:100px;
+    background: white;
+    text-align: center;
+    font:normal bold 40px Verdana,"新宋体";
+    position: relative;
+}
+.MVContent div{
+    width:298px;
+    height:50px;
+    color:white;
+    position: absolute;
+    /*top:100px;*/
+    margin:50px auto;
+    border:1px solid gray;
+}
+/*.MVContent a img{*/
+/*    border-radius: 5%;*/
+/*}*/
+.MVContent img:hover,.MVContent div:hover{
+    color:rgb(50,200,220);
+    transition:all 0.5s;
+    transform: scale(1.05);
+}
+.MVContent .tittleOne{
+    top:160px;
+}
+.MVContent .tittleTwo{
+    top:325px;
+}
+.MVContent .tittleThree{
+    top:490px;
+}
+.selectListenBook{
+    width:1000px;
+    height:600px;
+    background: white;
+}
+.ListenTittle{
+    width:1000px;
+    height:100px;
+    background: white;
+    /*text-align: center;*/
+    font:normal bold 40px Verdana,"新宋体";
+    position: relative;
+    border-bottom:1px solid gray;
+}
+.ListenContent div{
+    width:310px;
+    height:140px;
+    background: white ;
+    margin:10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.ListenContent div:hover{
+    background: rgba(128,128,128,0.3);
+}
+.ListenContent div img{
+    margin:10px;
+    display: inline-block;
+    float:left;
+}
+.ListenContent div p{
+    /*margin:10px;*/
+    display: inline-block;
+    float:left;
+    width:150px;
+    height:100px;
+    color:black;
+}
+.ListenContent div p:hover{
+    color:rgb(50,200,220);
+}
+.classicAnime{
+    width:680px;
+    height:600px;
+    background: white;
+}
+.AnimeTittle{
+    width:680px;
+    height:100px;
+    background: white;
+    /*text-align: center;*/
+    font:normal bold 40px Verdana,"新宋体";
+    position: relative;
+}
+.AnimeContent div{
+    width:160px;
+    height:160px;
+    border:1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    margin:0 30px;
+    background-repeat: no-repeat;
+    transition:all 3s;
+}
+.AnimeContent div:hover{
+    transform:rotate(360deg);
+}
+.R1{
+    background-image: url("../img/content/刺客伍六七.jpg");
+}
+.R2{
+    background-image: url("../img/content/王也.jpg");
+}
+.R3{
+    background-image: url("../img/content/罗小黑战记.jpg");
+}
+.R4{
+    background-image: url("../img/content/魁拔.jpg");
+}
+.R5{
+    background-image: url("../img/content/那年那兔那些事儿.jpg");
+}
+.R6{
+    background-image: url("../img/content/雾山五行.jpg");
+}
+.R7{
+    background-image: url("../img/content/风云决.jpg");
+}
+.R8{
+    background-image: url("../img/content/魔道祖师.jpg");
+}
+.R9{
+    background-image: url("../img/content/天官赐福.jpg");
+}
+.popularitySinger{
+    position:absolute;
+    top:2000px;
+    right:0;
+    width:300px;
+    height:600px;
+    background: white;
+}
+.SingerTittle{
+    width:300px;
+    height:100px;
+    background: white;
+    text-align: center;
+    font:normal bold 40px Verdana,"新宋体";
+    position: relative;
+}
+.SingerContent{
+    margin:0 auto;
+    background-repeat: no-repeat;
+}
+.D1{
+    background-image: url("../img/content/周杰伦.png");
+    margin:10px auto;
+    background-repeat: no-repeat;
+}
+.D2{
+    background-image: url("../img/content/薛之谦.png");
+    margin:10px auto;
+    background-repeat: no-repeat;
+}
+.D3{
+    background-image: url("../img/content/张杰.png");
+    margin:10px auto;
+    background-repeat: no-repeat;
+}
+.link{
+    width:1000px;
+    height:300px;
+    background: white;
+}
+.linkTittle{
+    width:1000px;
+    height:100px;
+    background: white;
+    /*text-align: center;*/
+    font:normal bold 40px Verdana,"新宋体";
+    position: relative;
+}
+.linkContent{
+    width:1000px;
+    height:200px;
+    /*background: coral;*/
+    /*font:normal normal 15px Verdana,"宋体";*/
+}
+.linkContent p{
+    width:200px;
+    height:50px;
+    /*line-height: 30px;*/
+    display: inline-block;
+    float:left;
+    margin:30px 60px;
+    font:normal normal 30px Verdana,"宋体";
+    color:black;
+}
+.linkContent p:hover{
+    color:rgb(50,200,220);
+}
+.hardware{
+    position:relative;
+    width:1000px;
+    height:200px;
+    background:transparent;
+}
+/*页脚*/
+.footer{
+    background:dimgray;
+    width:auto;
+    height:257px;
+    margin:0 auto;
+    vertical-align: center;
+}
+.footer div{
+    background-color: #333;
+    text-align: center;
+}
+.footer_1{
+    color: #b1b3b9;
+}
+.footer>div>div:first-child{
+    color: #b1b3b9;
+    border: 1px #3d424a solid;
+    text-align: center;
+    padding: 15px 0;
+}
+.footer-2{
+    font-size: 12px;
+    color: #b1b3b9;
+    margin-right: 22px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.footer-2:hover,.footer_1:hover{
+    color: rgb(50,200,220);
+}
+.footer>div>div>p{
+    line-height: 30px;
+    text-align: center;
+    color: #b1b3b9;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border-radius: 5px;
+}
+.QR{
+    position:fixed;
+    background-image: url("../img/quick response code.png");
+    right:0;
+    bottom:0;
+}
+/*登录弹框*/
+body{
+    margin: 0;
+    z-index: 1;
+}
+.Popup{
+    position: fixed;
+    left: 0;
+    top: 250px;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 1;
+}
+.tankuang{
+    position: relative;
+    background: #fff;
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    margin: 5% auto;
+    z-index: 1;
+}
+#header{
+    height: 40px;
+    z-index: 1;
+}
+#header-right{
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    right: 5px;
+    top: 5px;
+    text-align: center;
+    z-index: 1;
+}
+#header-right:hover{
+    background-color: #0099FF;
+}
+#article{
+    text-align: center;
+    color: black;
+    z-index: 1;
+}
+#article input{
+    width: 400px;
+    height: 60px;
+    margin: 20px 0;
+    font-size: 25px;
+    color: black;
+    z-index: 1;
+}
+#article input:last-child{
+    background-color: rgb(50,200,220);
+    font-size: 25px;
+    z-index: 1;
+}
+#footer{
+    text-align: center;
+    z-index: 1;
+}
+#footer a{
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    z-index: 1;
+}
+#footer a:hover{
+    text-decoration: underline;
+    z-index: 1;
+}

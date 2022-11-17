@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>青鸟音乐 - 传递音乐的力量</title>
+    <link rel="icon" href="img/header/青鸟.icon"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div class="mainPage">
+    <div class="header">
+        <h1 class="logo">
+            <a href="">
+                <img src="img/header/logo.png" alt="青鸟音乐">
+            </a>
+        </h1>
+        <div class="search_input">
+            <label>
+                <input type="text" placeholder="张芸京 偏爱" value="">
+            </label>
+            <div class="search_button">
+                <a href="#">
+                    <img src="img/header/search_icon.png" alt="搜索">
+                </a>
+            </div>
+        </div>
+        <div class="topNav">
+            <ul>
+                <li><a href="#" target="_blank"><span>客服中心</span></a></li>
+                <li><a href="#" target="_blank"><span>广纳贤士</span></a></li>
+                <li><a href="#" target="_blank"><span>商务合作</span></a></li>
+                <li><a href="#" target="_blank"><span>会员中心</span></a></li>
+            </ul>
+            <!--            <a class="login_button" id="login_button" href="#">登录 | 注册</a>-->
+            <button type="button" onclick="dianwo()" class="login_button" id="login_button">登录|注册</button>
+            <div class="Popup" id='Popup'>
+                <div class="tankuang">
+                    <div id="header">
+                        <div><img src="img/logo.png" alt=""/></div>
+                        <div id="header-right" onclick="hidder()">x</div>
+                    </div>
+                    <div id="article">
+                        <h1>账号密码登录</h1>
+                        <label>
+                            <input type="text" name="username"/>
+                        </label><br/>
+                        <label>
+                            <input type="password" name="password"/>
+                        </label><br/>
+                        <input type="submit" value="授权并登录"/>
+                    </div>
+                    <div id="footer">
+                        <a href="">忘了密码？</a>
+                        <a href="注册.html" target="_blank">注册新账号</a>
+                        <a href="">意见反馈</a>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                document.getElementById('Popup').style.display = "none";
+
+                function dianwo() {
+                    document.getElementById('Popup').style.display = "";
+                }
+
+                function hidder() {
+                    document.getElementById('Popup').style.display = "none";
+                }
+            </script>
+        </div>
+    </div>
+    <div class="navWrap">
+        <div class="nav">
+            <ul class="homeNav">
+                <li><a href="首页.html" class="normalOne">首页</a></li>
+                <li><a href="榜单.html" class="normalTwo">榜单</a></li>
+                <li><a href="听书.html" class="normalThree">听书</a></li>
+                <li><a href="下载青鸟.html" class="normalFour">下载青鸟</a></li>
+                <li><a href="听歌识曲.html" class="normalFive">听歌识曲</a></li>
+                <li><a href="#" class="normalSix">更多</a></li>
+            </ul>
+            <ul class="subNav">
+                <li><a href="#"><img src="" alt="">直播</a></li>
+                <li><a href="#"><img src="" alt="">商城</a></li>
+                <li><a href="#"><img src="" alt="">音乐人</a></li>
+                <li><a href="#"><img src="" alt="">代理商</a></li>
+                <li><a href="#"><img src="" alt="">主播电台</a></li>
+                <li><a href="#"><img src="" alt="">开放平台</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="slider"></div>
+    <div class="downloadBlur">
+        <div class="download">
+            <ul>
+                <li><img src="img/downloadBlur/PC.png" alt="PC" title="电脑版"><a href="#">&nbsp;&nbspPC</a></li>
+                <li><img src="img/downloadBlur/ANDROID.png" alt="ANDROID" title="安卓版"><a href="#">&nbsp&nbspANDROID</a>
+                </li>
+                <li><img src="img/downloadBlur/APPLE.png" alt="APPLE" title="苹果版"><a href="#">&nbsp&nbspAPPLE</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="subContent_first">
+            <div class="selectSongList">
+                <div class="selectTittle">精选<span>华语</span>
+                    <p class="M1">更多</p></div>
+                <div class="selectContent">
+                    <ul>
+                        <li><a href="#"><img src="img/content/曾梦想仗剑走天涯.png" alt="曾梦想仗剑走天涯" title="曾梦想仗剑走天涯"></a></li>
+                        <li><a href="#"><img src="img/content/突然好想你.png" alt="突然好想你" title="突然好想你"></a></li>
+                        <li><a href="#"><img src="img/content/光辉岁月.png" alt="光辉岁月" title="光辉岁月"></a></li>
+                        <li><a href="#"><img src="img/content/朋友-周华健.png" alt="朋友-周华健" title="朋友"></a></li>
+                        <li><a href="#"><img src="img/content/平凡之路.png" alt="平凡之路" title="平凡之路"></a></li>
+                        <li><a href="#"><img src="img/content/夜曲.png" alt="夜曲" title="夜曲"></a></li>
+                        <li><a href="#"><img src="img/content/一生有你.png" alt="一生有你" title="一生有你"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hotSongList">
+                <div class="topTittle">TOP<span>榜单</span></div>
+                <div class="topContent">
+                    <a href="#"><img src="img/content/青鸟热歌榜.png" alt="青鸟热歌榜"></a>
+                    <a href="#"><img src="img/content/青鸟热歌榜.png" alt="青鸟热歌榜"></a>
+                    <a href="#"><img src="img/content/青鸟热歌榜.png" alt="青鸟热歌榜"></a>
+                    <a href="#"><img src="img/content/青鸟飙升榜.png" alt="青鸟飙升榜"></a>
+                    <a href="#"><img src="img/content/青鸟飙升榜.png" alt="青鸟飙升榜"></a>
+                    <a href="#"><img src="img/content/青鸟飙升榜.png" alt="青鸟飙升榜"></a>
+                    <a href="#"><img src="img/content/青鸟收藏榜.png" alt="青鸟收藏榜"></a>
+                    <a href="#"><img src="img/content/青鸟收藏榜.png" alt="青鸟收藏榜"></a>
+                    <a href="#"><img src="img/content/青鸟收藏榜.png" alt="青鸟收藏榜"></a>
+                </div>
+            </div>
+        </div>
+        <div class="hardware"><img src="img/hardware/codingGame.png" alt="游戏化编程教学"></div>
+        <div class="subContent_second">
+            <div class="newSongs">
+                <div class="newTittle">首发<span>新曲</span>
+                    <p class="M1">更多</p></div>
+                <div class="newContent">
+                    <a href="#">
+                        <div class="S1">和煦的糖果风-Candy_Wind</div>
+                    </a>
+                    <a href="#">
+                        <div class="S2">Five Hundred Miles-Justin</div>
+                    </a>
+                    <a href="#">
+                        <div class="S3">忽然之间-莫文蔚</div>
+                    </a>
+                    <a href="#">
+                        <div class="S4">Cold Winter-July</div>
+                    </a>
+                    <a href="#">
+                        <div class="S5">星辰不坠落-蓝心羽</div>
+                    </a>
+                    <a href="#">
+                        <div class="S6">山河无恙在我胸-蔡徐坤/佟丽娅</div>
+                    </a>
+                    <a href="#">
+                        <div class="S7">干物女（WeiWei）-萧忆情Alex</div>
+                    </a>
+                    <a href="#">
+                        <div class="S8">东京不太热-洛天依</div>
+                    </a>
+                    <a href="#">
+                        <div class="S9">爱德华的小说-蒋蒋/朱贺</div>
+                    </a>
+                    <a href="#">
+                        <div class="S10">負けないで（不肯服输）-坂井泉水</div>
+                    </a>
+                    <a href="#">
+                        <div class="S11">She (Radio Edit)-Groove Coverage</div>
+                    </a>
+                    <a href="#">
+                        <div class="S12">走马-陈粒</div>
+                    </a>
+                    <a href="#">
+                        <div class="S13">Nevada-(歌手：无法显示)</div>
+                    </a>
+                    <a href="#">
+                        <div class="S14">偏爱-张芸京</div>
+                    </a>
+                    <a href="#">
+                        <div class="S15">アイロニ (反语)-4円 (ヨエン)</div>
+                    </a>
+                    <a href="#">
+                        <div class="S16">空城旧梦-颜妹</div>
+                    </a>
+                </div>
+            </div>
+            <div class="MVRecommend">
+                <div class="MVTittle">推荐<span>MV</span></div>
+                <div class="MVContent">
+                    <a href="img/一人之下.mp4">
+                        <img src="img/content/一人之下.jpg" alt="">
+                    </a>
+                    <div class="tittleOne"><p>【一人之下】【王也】</p>
+                        <p>过去无可挽回，未来可以改变</p>
+                    </div>
+                    <a href="img/晚安喵.mp4">
+                        <img src="img/content/晚安喵.jpg" alt="">
+                    </a>
+                    <div class="tittleTwo"><p>【晚安喵】【艾索】</p>
+                        <p>可爱小猫萌化人心</p>
+                    </div>
+                    <a href="img/有点甜.mp4">
+                        <img src="img/content/网络歌手.jpg" alt="">
+                    </a>
+                    <div class="tittleThree"><p>【有点甜】【网络歌手】</p>
+                        <p>护士姐姐，麻烦续一瓶胰岛素</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hardware"><img src="img/hardware/screeps.png" alt="screeps" title="程序员的沙盒游戏"></div>
+        <div class="subContent_third">
+            <div class="selectListenBook">
+                <div class="ListenTittle">热点<span>听书</span>
+                    <p class="M1">更多</p></div>
+                <div class="ListenContent">
+                    <a href="#">
+                        <div class="T1">
+                            <img src="img/content/德云社.jpg" alt="" title="喜剧班底再度爆笑来袭">
+                            <p>
+                                <br>
+                                金牌喜剧班<br>
+                                郭德纲<br>
+                                陈佩斯<br>
+                                英达<br>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="T2">
+                            <img src="img/content/从你的全世界路过.jpg" alt="" title="从你的全世界路过">
+                            <p>
+                                <br>
+                                从你的全世界路过<br>
+                                林宥嘉<br>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="T3">
+                            <img src="img/content/语汐.jpg" alt="" title="抚慰你心灵的伤疤">
+                            <p>
+                                <br>
+                                语汐电台 | 情感治愈<br>
+                                语汐<br>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="T4">
+                            <img src="img/content/都市夜阑珊.jpg" alt="" title="夜色阑珊醉佳人">
+                            <p>
+                                <br>
+                                都市夜阑珊<br>
+                                枫荻悠悠<br>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="T5">
+                            <img src="img/content/凡人修仙传.jpg" alt="" title="大型玄幻修真瑰丽巨作">
+                            <p>
+                                <br>
+                                凡人修仙传<br>
+                                微媒有道<br>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="T6">
+                            <img src="img/content/许你万丈光芒好.jpg" alt="" title="其实你也很优秀">
+                            <p>
+                                <br>
+                                许你万丈光芒好<br>
+                                酷莹<br>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="T7">
+                            <img src="img/content/解忧电台.jpg" alt="" title="专属于你的解忧杂货铺">
+                            <p>
+                                <br>
+                                解忧电台<br>
+                                中国青年报<br>
+                                酷狗音乐<br>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="T8">
+                            <img src="img/content/九月桂花香满园.jpg" alt="" title="那年春暖又花开">
+                            <p>
+                                <br>
+                                九月桂花香满园<br>
+                                桂芳<br>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="T9">
+                            <img src="img/content/逆水寒.jpg" alt="" title="光与影的交错">
+                            <p>
+                                <br>
+                                逆水寒<br>
+                                陌尘<br>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="classicAnime">
+                <div class="AnimeTittle">经典<span>国漫</span>
+                    <p class="M1">更多</p></div>
+                <div class="AnimeContent">
+                    <a href="#">
+                        <div class="R1" title="刺客伍六七"></div>
+                    </a>
+                    <a href="#">
+                        <div class="R2" title="一人之下"></div>
+                    </a>
+                    <a href="#">
+                        <div class="R3" title="罗小黑战记"></div>
+                    </a>
+                    <a href="#">
+                        <div class="R4" title="魁拔"></div>
+                    </a>
+                    <a href="#">
+                        <div class="R5" title="那年那兔那些事儿"></div>
+                    </a>
+                    <a href="#">
+                        <div class="R6" title="巫山五行"></div>
+                    </a>
+                    <a href="#">
+                        <div class="R7" title="风云决"></div>
+                    </a>
+                    <a href="#">
+                        <div class="R8" title="魔道祖师"></div>
+                    </a>
+                    <a href="#">
+                        <div class="R9" title="鬼嫁衣"></div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="popularitySinger">
+                <div class="SingerTittle">人气<span>歌手</span></div>
+                <div class="SingerContent">
+                    <a href="#">
+                        <div class="D1"><img src="img/content/周杰伦.png" alt="" title="周杰伦"></div>
+                    </a>
+                    <a href="#">
+                        <div class="D2"><img src="img/content/薛之谦.png" alt="" title="薛之谦"></div>
+                    </a>
+                    <a href="#">
+                        <div class="D3"><img src="img/content/张杰.png" alt="" title="张杰"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hardware"><img src="img/hardware/扣哒世界.png" alt="扣哒世界" title="少儿编程的先驱者"></div>
+        <div class="subContent_fourth">
+            <div class="link">
+                <div class="linkTittle">友情<span>链接</span>
+                    <p class="M1">更多</p></div>
+                <div class="linkContent">
+                    <a href="#">
+                        <div><p>网易云音乐</p>
+                            <p>QQ音乐</p>
+                            <p>虾米音乐</p></div>
+                    </a>
+                    <a href="#">
+                        <div><p>酷狗音乐</p>
+                            <p>酷我音乐</p>
+                            <p>爱音乐</p></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <div>
+                <a href="" class="footer_1">关于青鸟</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">监督举报</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">商务合作</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">广告服务</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">投诉指引</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">隐私政策</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">儿童隐私注册</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">用户服务协议</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">青鸟音乐人</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">青鸟直通车</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">招聘信息</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">客服中心</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">用户体验计划</a>
+            </div>
+            <div>
+                <a href="https://www.kugou.com/ts/album/4094342/" class="footer-2">白眉大侠</a>
+                <a href="https://www.kugou.com/ts/album/18804082/" class="footer-2">茅山捉鬼人</a>
+                <a href="https://www.kugou.com/ts/album/2892259/" class="footer-2">夜听FM</a>
+                <a href="https://www.kugou.com/ts/album/6900644/" class="footer-2">贝瓦故事</a>
+                <a href="https://www.kugou.com/ts/album/37885807/" class="footer-2">文武贝流行钢琴（1）</a>
+                <a href="https://www.kugou.com/ts/album/41731833/" class="footer-2">郭德纲</a>
+                <a href="https://www.kugou.com/ts/album/36794329/" class="footer-2">原创静心舒眠纯音乐</a>
+                <a href="https://www.kugou.com/ts/album/9236581/" class="footer-2">黑水公园</a>
+                <a href="https://www.kugou.com/ts/album/9239516/" class="footer-2">舒烟电台</a>
+                <a href="https://www.kugou.com/ts/album/3035508/" class="footer-2">晚安故事盒子</a>
+                <a href="https://www.kugou.com/ts/album/24771442/" class="footer-2">哄睡故事</a>
+                <a href="https://www.kugou.com/ts/album/43730639/" class="footer-2">隋唐演义</a>
+                <a href="https://www.kugou.com/ts/album/8090766/" class="footer-2">程一电台</a>
+                <a href="https://www.kugou.com/ts/album/43588726/" class="footer-2">宝宝巴土儿歌</a>
+                <a href="https://www.kugou.com/ts/album/37690514/" class="footer-2">这首歌，等你来听</a>
+                <a href="https://www.kugou.com/ts/album/39843428/" class="footer-2">斗罗大陆</a>
+                <a href="https://www.kugou.com/ts/album/8529420/" class="footer-2">水浒传</a>
+                <a href="https://www.kugou.com/ts/album/940008/" class="footer-2">星空下的钢琴曲1</a>
+                <a href="https://www.kugou.com/ts/album/37191013/" class="footer-2">盗墓笔记</a>
+                <a href="https://www.kugou.com/ts/album/18812582/" class="footer-2">抬棺匠</a>
+                <a href="https://www.kugou.com/ts/album/3035508/" class="footer-2">晚安故事盒子</a>
+                <a href="https://www.kugou.com/ts/album/10373617/" class="footer-2">无敌剑域</a>
+                <a href="https://www.kugou.com/ts/album/39145099/" class="footer-2">治疗师｜3D助眠解压沉浸式音乐</a>
+                <a href="https://www.kugou.com/ts/album/36517838/" class="footer-2">小猪佩奇</a>
+                <a href="https://www.kugou.com/ts/album/2470525/" class="footer-2">鬼吹灯经典系列</a>
+                <a href="https://www.kugou.com/ts/album/40025235/" class="footer-2">上门龙婿</a>
+                <a href="https://www.kugou.com/ts/album/39570266/" class="footer-2">超牛女婿</a>
+                <a href="https://www.kugou.com/ts/album/37741217/" class="footer-2">奇葩修真天才</a>
+                <a href="https://www.kugou.com/ts/album/37014995/" class="footer-2">治愈失眠:雷雨声</a>
+                <a href="https://www.kugou.com/ts/album/1078813/" class="footer-2">蕊希电台</a>
+                <a href="https://www.kugou.com/zt/0004/" class="footer-2">成语故事专题</a>
+                <a href="https://www.kugou.com/zt/0005/" class="footer-2">儿童故事专题</a>
+                <a href="https://www.kugou.com/zt/0006/" class="footer-2">鬼吹灯专题</a>
+            </div>
+            <div>
+                <p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@qingniao.com</p>
+
+                <p>信息网络传播视听节目许可证 ××××××× 增值电信业务经营许可证豫××-××××××××</p>
+
+                <p>广播电视节目许可证（豫）字第××××号 营业性演出许可证穗天演440106025 营业执照</p>
+
+                <p>穗公网监备案证第440106500101167 互联网药品信息服务资格证编号（豫）-非经营性-2021-0018 豫公网备案 5646121551455465</p>
+
+                <p>互联网不良信息举报中心：www.12377.cn 青鸟不良信息举报邮箱：jubao_music@kugou.net 客服邮箱：kefu@qingniao.com</p>
+
+                <p>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2004-2021 Qing-Inc.All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <div class="QR">
+        <img src="img/quick%20response%20code.png" alt="quick response code" title="quick response code">
+    </div>
+</div>
+</body>
+</html>

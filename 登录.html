@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="icon" href="img/青鸟.icon">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    /*主页*/
+    .mainPage{
+      background-color: white;
+      margin:0 auto;
+      position:relative;
+    }
+    /*头部*/
+    .header{
+      width:1500px;
+      height:150px;
+      margin:0 auto;
+      position:relative;
+      border-bottom:1px solid lightgray;
+    }
+    /*头部logo*/
+    .logo{
+      left:208px;
+      display:inline-block;
+      background:url("img/logo.png") no-repeat left top;
+      top:50px;
+      width:153px;
+      margin:0;
+      position:relative;
+    }
+    /*头部搜索框*/
+    .search_input{
+      top:5px;
+      left:400px;
+      width:300px;
+      height:36px;
+      position:relative;
+      border:1px solid lightgray;
+    }
+    /*头部搜索输入框*/
+    .search_input input{
+      text-indent: 3em;
+      top:6px;
+      left:6px;
+      width:250px;
+      height:22px;
+      position:relative;
+      border:1px solid white;
+      outline:none;
+    }
+    /*头部搜索提交按钮*/
+    .search_input .search_button{
+      display:inline-block;
+      top:1px;
+      right:0;
+      width:36px;
+      height:36px;
+      position:absolute;
+    }
+    /*头部导航列表*/
+    .topNav ul{
+      position:absolute;
+      display:inline-block;
+      left:800px;
+      top:100px;
+      line-height:3px;
+      text-indent:1em;
+    }
+    /*头部导航列表选项*/
+    .topNav>ul>li{
+      float:right;
+      display:inline-block;
+      right:auto;
+      top:auto;
+      text-indent:2em;
+    }
+    .topNav>ul>li a{
+      color:gray;
+      text-decoration: none;
+      font:normal bold 15px verdane,"新宋体";
+    }
+    .topNav>ul>li a:hover{
+      color:rgb(100,200,220);
+      border-radius: 5px;
+    }
+    /*导航登录/注册按钮*/
+    .login_button{
+      display:inline-block;
+      position:relative;
+      top:-30px;
+      left: 1200px;
+      width: 144px;
+      height: 30px;
+      line-height: 28px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      margin: 0 12px 0 0;
+      background: rgb(100,200,220);
+      border-radius: 8px;
+
+    }
+    .login_button:hover{
+      background: rgb(50,160,180);
+      border:2px solid white;
+      border-radius:8px;
+    }
+    /*导航*/
+    .navWrap{
+      background:rgba(0,0,0,0.8);
+      width:auto;
+      height:100px;
+      margin:0 auto;
+    }
+    .nav{
+      width:1500px;
+      height:100px;
+      margin:0 auto;
+    }
+    .homeNav{
+      display: inline-block;
+      float:left;
+      width:900px;
+      height:100px;
+    }
+    .homeNav li{
+      list-style-type: none;
+      float:left;
+      line-height:114px;
+    }
+    .homeNav a{
+      position:relative;
+      text-decoration: none;
+      color:white;
+      border:30px solid rgba(0,0,0,0);
+      font: normal bolder 33px verdana,"新宋体";
+    }
+    .normalOne:hover,.normalTwo:hover,.normalThree:hover,
+    .normalFour,.normalFive:hover,.normalSix:hover{
+      /*background: rgb(50,200,220);*/
+    }
+    .subNav{
+      display:inline-block;
+      width:600px;
+      height:100px;
+      /*background:yellow;*/
+    }
+    .subNav li{
+      list-style-type: none;
+      float:left;
+      line-height:130px;
+    }
+    .subNav a{
+      position:relative;
+      left:60px;
+      text-decoration:none;
+      color:white;
+      /*background: rgb(50,200,220);*/
+      background-size: contain;
+      border:24px solid transparent;
+      font: normal bolder 15px verdana,"新宋体";
+    }
+    .subNav a:hover{
+      color:rgb(50,200,220);
+    }
+    /*登录弹框*/
+    body{
+      margin: 0px;
+    }
+    .Popup{
+      position: fixed;
+      left: 0;
+      top: 250px;
+      background: #000;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+    }
+    .tankuang{
+      position: relative;
+      background: #fff;
+      width: 500px;
+      height: 500px;
+      border-radius: 5px;
+      margin: 5% auto;
+    }
+    #header{
+      height: 40px;
+    }
+    #header-right{
+      position: absolute;
+      width: 100px;
+      height: 25px;
+      border-radius: 5px;
+      background: white;
+      color: black;
+      right: 5px;
+      top: 5px;
+      text-align: center;
+    }
+    #header-right:hover{
+      background-color: #0099FF;
+    }
+    #article{
+      text-align: center;
+      color: black;
+    }
+    #article input{
+      width: 400px;
+      height: 60px;
+      margin: 20px 0;
+      font-size: 25px;
+      color: black;
+    }
+    #article input:last-child{
+      background-color: rgb(50,200,220);
+      font-size: 25px;
+    }
+    #footer{
+      text-align: center;
+    }
+    #footer a{
+      color: black;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    #footer a:hover{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+  <h1 class="logo">
+    <a href="">
+      <img src="img/logo.png" alt="青鸟音乐">
+    </a>
+  </h1>
+  <div class="search_input">
+    <input type="text" placeholder="张芸京 偏爱" value="">
+    <div class="search_button">
+      <a href="#">
+        <img src="img/search_icon.png" alt="搜索">
+      </a>
+    </div>
+  </div>
+  <div class="topNav">
+    <ul>
+      <li><a href="#" target="_blank"><span>客服中心</span></a></li>
+      <li><a href="#" target="_blank"><span>广纳贤士</span></a></li>
+      <li><a href="#" target="_blank"><span>商务合作</span></a></li>
+      <li><a href="#" target="_blank"><span>会员中心</span></a></li>
+    </ul>
+    <button type="button" onclick="dianwo()" class="login_button" id="login_button">登录|注册</button>
+    <div class="Popup" id='Popup'>
+      <div class="tankuang">
+        <div id="header">
+          <div><img src="img/logo.png"/></div>
+          <div id="header-right" onclick="hidder()">x</div>
+        </div>
+        <div id="article">
+          <h1>账号密码登录</h1>
+          <input type="text" name="username"/><br/>
+          <input type="password" name="password"/><br/>
+          <input type="submit" value="授权并登录"/>
+        </div>
+        <div id="footer">
+          <a href="">忘了密码？</a>
+          <a href="注册.html" target="_blank">注册新账号</a>
+          <a href="">意见反馈</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      document.getElementById('Popup').style.display="none";
+      function dianwo(){
+        document.getElementById('Popup').style.display="";
+      }
+      function hidder(){
+        document.getElementById('Popup').style.display="none";
+      }
+    </script>
+  </div>
+</div>
+<div class="navWrap">
+  <div class="nav">
+    <ul class="homeNav">
+      <li><a href="首页.html" class="normalOne">首页</a></li>
+      <li><a href="榜单.html" class="normalTwo">榜单</a></li>
+      <li><a href="听书.html" class="normalThree">听书</a></li>
+      <li><a href="下载青鸟.html" class="normalFour">下载青鸟</a></li>
+      <li><a href="#" class="normalFive">听歌识曲</a></li>
+      <li><a href="#" class="normalSix">更多</a></li>
+    </ul>
+    <ul class="subNav">
+      <li><a href="#"><img src="" alt="">直播</a></li>
+      <li><a href="#"><img src="" alt="">商城</a></li>
+      <li><a href="#"><img src="" alt="">音乐人</a></li>
+      <li><a href="#"><img src="" alt="">代理商</a></li>
+      <li><a href="#"><img src="" alt="">主播电台</a></li>
+      <li><a href="#"><img src="" alt="">开放平台</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

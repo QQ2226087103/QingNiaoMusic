@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#quanbu{
+    width: 1500px;
+    position: relative;
+    margin:0 auto;
+    /*top: 300px;*/
+}
+#b{
+    width: 600px;
+    margin: 0 auto;
+}
+#quanxuan img{
+    margin-left: 35px;
+}
+#quanbu .a{
+    float: right;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    background: rgb(50,200,220);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 7px;
+}
+#b h2 a:hover{
+    background: rgb(100,200,220);
+}
+#gedan a{
+    text-decoration: none;
+}
+#quanxuan{
+    margin-left: 35px;
+    color: #b1b3b9;
+    font-size: 20px;
+    width: 600px;
+    border-top: 1px solid gray;
+    margin: 0 auto;
+    /*position: absolute;*/
+    /*left: 470px;*/
+}
+#gedan li{
+    list-style: none;
+    border-bottom: 1px solid gray ;
+    line-height: 40px;
+    width: 600px;
+    margin: 0 auto;
+}
+#gedan .b{
+    color: gray;
+}
+#gedan  ul li:hover{
+    color:rgb(50,200,220);
+    background: azure;
+}
+#gedan span{
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*底部*/
+footer div{
+    background-color: #333;
+    text-align: center;
+}
+.footer_1{
+    color: #b1b3b9;
+}
+footer>div>div:first-child{
+    color: #b1b3b9;
+    border: 1px #3d424a solid;
+    text-align: center;
+    padding: 15px 0;
+}
+.footer-2{
+    font-size: 12px;
+    color: #b1b3b9;
+    margin-right: 22px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.footer-2:hover,.footer_1:hover{
+    color: rgb(50,200,220);
+}
+footer>div>div>p{
+    line-height: 30px;
+    text-align: center;
+    color: #b1b3b9;
+}
+#quanbu{
+    margin:50px auto;
+}

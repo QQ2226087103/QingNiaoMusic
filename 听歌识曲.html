@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="email=no">
+    <title>听歌识曲</title>
+    <meta name="keywords" content="听歌识曲服务,在线听歌识曲服务,歌曲识别,听歌识曲工具" />
+    <meta name="description" content="能为移动应用、视频平台、智能车载、" />
+
+    <link rel="stylesheet" href="css/music_recognition.css" />
+    <link rel="stylesheet" href="css/music_recognition_mobile_new.css" />
+
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/soundHound.css"/>
+
+</head>
+
+<body>
+
+<div class="header">
+    <h1 class="logo">
+        <a href="">
+            <img src="img/logo.png" alt="青鸟音乐">
+        </a>
+    </h1>
+    <div class="search_input">
+        <label>
+            <input type="text" placeholder="张芸京 偏爱" value="">
+        </label>
+        <div class="search_button">
+            <a href="#">
+                <img src="img/search_icon.png" alt="搜索">
+            </a>
+        </div>
+    </div>
+    <div class="topNav">
+        <ul>
+            <li><a href="#" target="_blank"><span>客服中心</span></a></li>
+            <li><a href="#" target="_blank"><span>广纳贤士</span></a></li>
+            <li><a href="#" target="_blank"><span>商务合作</span></a></li>
+            <li><a href="#" target="_blank"><span>会员中心</span></a></li>
+        </ul>
+        <button type="button" onclick="dianwo()" class="login_button" id="login_button">登录|注册</button>
+        <div class="Popup" id='Popup'>
+            <div class="tankuang">
+                <div id="header">
+                    <div><img src="img/logo.png"/></div>
+                    <div id="header-right" onclick="hidder()">x</div>
+                </div>
+                <div id="article">
+                    <h1>账号密码登录</h1>
+                    <input type="text" name="username"/><br/>
+                    <input type="password" name="password"/><br/>
+                    <input type="submit" value="授权并登录"/>
+                </div>
+                <div id="footer">
+                    <a href="">忘了密码？</a>
+                    <a href="注册.html" target="_blank">注册新账号</a>
+                    <a href="">意见反馈</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            document.getElementById('Popup').style.display="none";
+            function dianwo(){
+                document.getElementById('Popup').style.display="";
+            }
+            function hidder(){
+                document.getElementById('Popup').style.display="none";
+            }
+        </script>
+    </div>
+</div>
+<div class="navWrap">
+    <div class="nav">
+        <ul class="homeNav">
+            <li><a href="首页.html" class="normalOne">首页</a></li>
+            <li><a href="榜单.html" class="normalTwo">榜单</a></li>
+            <li><a href="听书.html" class="normalThree">听书</a></li>
+            <li><a href="下载青鸟.html" class="normalFour">下载青鸟</a></li>
+            <li><a href="听歌识曲.html" class="normalFive">听歌识曲</a></li>
+            <li><a href="#" class="normalSix">更多</a></li>
+        </ul>
+        <ul class="subNav">
+            <li><a href="#"><img src="" alt="">直播</a></li>
+            <li><a href="#"><img src="" alt="">商城</a></li>
+            <li><a href="#"><img src="" alt="">音乐人</a></li>
+            <li><a href="#"><img src="" alt="">代理商</a></li>
+            <li><a href="#"><img src="" alt="">主播电台</a></li>
+            <li><a href="#"><img src="" alt="">开放平台</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="s4pc">
+
+    <div class="mr_head">
+        <div class="mrh_d1">
+            <div class="mrh_d1_d1">
+                <img src="img/logo_white.png" alt="" class="mrh_i1" />
+                <ul class="mrh_ul1">
+                    <li class="mrh_li1 active">听歌识曲</li>
+                    <!-- <li class="mrh_li1">音乐监播</li> -->
+                </ul>
+            </div>
+            <div class="mrh_d1_d2 ">
+                <div class="mrh_d1_d2_d1 _login ">登录</div>
+                <div class="mrh_d1_d2_d2 _userinfoCon _hide">
+                        <span class="_userinfoCenter">
+                            <img src="" alt="" class="mrh_d1_d2_d2_i1 _userAvatar">
+                            <span class="mrh_d1_d2_d2_sp1 _userNickname"></span>
+                        </span>
+                    <span class="mrh_d1_d2_d2_sp2 _logout">退出</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mr_banner">
+        <div class="mrb_d1">
+            <h1 class="mrb_d1_h1">听歌识曲</h1>
+            <p class="mrb_d1_p1">基于业界领先技术和庞大曲库，识别速度快，识别结果准，能为移动应用、视频平台、智能车载、电台电视台等各类音乐识别业务提供强有力的支持。</p>
+        </div>
+    </div>
+
+
+    <div class="mr_tab1">
+        <ul class="mrt_ul1">
+            <li class="mrt_ul1_li"><a href="#music_recognition" class="mrt_ul1_li_a1">听歌识曲简介</a></li>
+            <li class="mrt_ul1_li"><a href="#technical_characteristics" class="mrt_ul1_li_a1">技术特性</a></li>
+            <li class="mrt_ul1_li"><a href="#application_scenarios" class="mrt_ul1_li_a1">应用场景</a></li>
+            <li class="mrt_ul1_li"><a href="#customer_case" class="mrt_ul1_li_a1">客户案例</a></li>
+            <li class="mrt_ul1_li"><a href="#cooperation_contact" class="mrt_ul1_li_a1">合作联系</a></li>
+        </ul>
+    </div>
+
+
+    <div class="mrcontent_d1 _tg0 music_recognition">
+        <div class="mrc_d1_d1">
+            <h2 class="mrc_d1_d1_h2">酷狗听歌识曲简介</h2>
+            <p class="mrc_d1_d1_p1">酷狗音乐识别服务（听歌识曲），基于业界领先技术和庞大曲库，识别速度快，识别结果准，能为移动应用、视频平台、智能车载、电台电视台等各类音乐识别业务提供强有力的支持。支持包括“听歌识曲”“音乐监播”等多种服务需求。</p>
+        </div>
+    </div>
+
+
+    <div class="mrcontent_d2 _tg1 technical_characteristics">
+        <div class="mrc_d2_d1">
+            <h2 class="mrc_d2_d1_h2">酷狗听歌识曲技术特性</h2>
+            <div class="mrc_d2_d1_d0">
+                <div class="mrc_d2_d1_d1">
+                    <img src="./img/icon_b1.png" alt="" class="mrc_d2_d1_d1_i1">
+                    <h3 class="mrc_d2_d1_d1_h3">业界领先</h3>
+                    <p class="mrc_d2_d1_d1_p1">
+                        平均识别时长3～4秒，精准度高达93%
+                    </p>
+                </div>
+                <div class="mrc_d2_d1_d1">
+                    <img src="img/icon_b2.png" alt="" class="mrc_d2_d1_d1_i1">
+                    <h3 class="mrc_d2_d1_d1_h3">庞大取库</h3>
+                    <p class="mrc_d2_d1_d1_p1">
+                        4000万正版曲库，全面准确歌曲信息数据
+                    </p>
+                </div>
+                <div class="mrc_d2_d1_d1">
+                    <img src="img/icon_b1.png" alt="" class="mrc_d2_d1_d1_i1">
+                    <h3 class="mrc_d2_d1_d1_h3">快速收录</h3>
+                    <p class="mrc_d2_d1_d1_p1">
+                        强大的人工团队实时收录新歌热歌
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mrcontent_d3 _tg2 application_scenarios" >
+        <div class="mrc_d3_d1">
+            <h2 class="mrc_d3_d1_h2">应用场景</h2>
+            <div class="mrc_d3_d1_d0">
+                <ul class="mrc_d3_d1_ul1">
+                    <li class="mrc_d3_d1_ul1_li _active">
+                        听歌识曲
+                    </li>
+                    <li class="mrc_d3_d1_ul1_li">
+                        短视频
+                    </li>
+                    <li class="mrc_d3_d1_ul1_li">
+                        直播
+                    </li>
+                    <li class="mrc_d3_d1_ul1_li">
+                        音乐监播
+                    </li>
+                    <li class="mrc_d3_d1_ul1_li">
+                        歌曲信息补全
+                    </li>
+                </ul>
+            </div>
+            <div class="mrc_d3_d1_d1">
+                <div class="mrc_d3_d1_d1_d1 _active">
+                    <div class="mrc_d3_d1_d1_d1_d1">
+                        <div class="mrc_d3_d1_d1_d1_d1_d0">
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">外放识曲</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">通过系统麦克风直接获取外部音源，有效提取音频特征，快速通过服务端进行歌曲识别。</p>
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">链接识曲</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">直接粘贴外部APP分享的链接，也能快速识别到该链接包括的音频或视频进行识别。</p>
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">本地识曲</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">可以选取本地的音频文件，识曲算法通过解码本地音频文件，进行快速识别。</p>
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">识别优势</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">识别快速，3-4秒即可以完成识别准确的歌曲。提供多场景的音乐识别方式，接入快速便捷。</p>
+                        </div>
+                    </div>
+                    <div class="mrc_d3_d1_d1_d1_d2">
+                        <img src="./img/rpic_1.png" alt="" class="mrc_d3_d1_d1_d1_d2_i1">
+                    </div>
+                </div>
+
+                <div class="mrc_d3_d1_d1_d1">
+                    <div class="mrc_d3_d1_d1_d1_d1">
+                        <div class="mrc_d3_d1_d1_d1_d1_d0">
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">视频分类</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">通过识别出来的短视频背景音乐，得到音乐的具体信息，包括音乐的分类及标签等，从而对视频进行有效的分类和标签管理。</p>
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">歌词字幕</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">识别出来视频的音乐后，自动获取歌曲的歌词，并且进行字幕对齐。</p>
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">版权管理</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">通过音乐识别，有效管理视频的音乐版权属性，快速定位并处理有版权风险的短视频。</p>
+                        </div>
+                    </div>
+
+
+                    <div class="mrc_d3_d1_d1_d1_d2">
+                        <img src="./img/rpic_2.png" alt="" class="mrc_d3_d1_d1_d1_d2_i1">
+                    </div>
+                </div>
+
+                <div class="mrc_d3_d1_d1_d1">
+                    <div class="mrc_d3_d1_d1_d1_d1">
+                        <div class="mrc_d3_d1_d1_d1_d1_d0">
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">歌曲识别</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">通过“听歌识曲”技术，快速识别到主播正在演唱的歌曲。</p>
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">真唱识别</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">识别到歌曲及歌词后，可以通过主播口型，哼音等判断，结合歌词可以判断主播是真唱或者假唱。</p>
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">主播推荐</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">通过歌曲识别，可以判断到唱歌好听的主播。也可以根据歌曲的热门程度，来决定推荐主播。</p>
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">版权识别</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">通过歌曲识别，获取歌曲的版权状态，判断主播翻唱是否侵权。</p>
+                        </div>
+                    </div>
+                    <div class="mrc_d3_d1_d1_d1_d2">
+                        <img src="./img/rpic_3.png" alt="" class="mrc_d3_d1_d1_d1_d2_i1">
+                    </div>
+                </div>
+
+                <div class="mrc_d3_d1_d1_d1">
+                    <div class="mrc_d3_d1_d1_d1_d1">
+                        <div class="mrc_d3_d1_d1_d1_d1_d0">
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">内容监控</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">可针对各类媒体音乐的播放内容、版权信息等进行识别和实时监控。</p>
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">数据统计</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">统计热播榜单歌曲和歌曲收听率数据等，支持数据导出。</p>
+                        </div>
+                    </div>
+                    <div class="mrc_d3_d1_d1_d1_d2">
+                        <!-- <img src="./img/rpic_1.png" alt="" class="mrc_d3_d1_d1_d1_d2_i1"> -->
+                    </div>
+                </div>
+
+                <div class="mrc_d3_d1_d1_d1">
+                    <div class="mrc_d3_d1_d1_d1_d1">
+                        <div class="mrc_d3_d1_d1_d1_d1_d0">
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">音乐信息填补</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">通过“听歌识曲”获取歌曲的完整信息，可以补全本地歌曲或者曲库信息的完整性。</p>
+                            <h4 class="mrc_d3_d1_d1_d1_d1_d1">音乐信息纠错</h4>
+                            <p class="mrc_d3_d1_d1_d1_d1_p1">通过“听歌识曲”获取歌曲的完整信息，对本地歌曲有错误的ID3信息等可以进行有效勘误。</p>
+                        </div>
+                    </div>
+                    <div class="mrc_d3_d1_d1_d1_d2">
+                        <!-- <img src="./img/rpic_1.png" alt="" class="mrc_d3_d1_d1_d1_d2_i1"> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mrcontent_d4 _tg3 customer_case">
+        <h2 class="mrc_d4_h2">客户案例</h2>
+        <div class="mrc_d4_d1">
+            <img src="./img/hzPic1.jpg" alt="" class="mrc_d4_d1_i1">
+            <img src="./img/hzPic2.jpg" alt="" class="mrc_d4_d1_i1">
+        </div>
+    </div>
+
+
+
+    <div class="mrcontent_d5 _tg4 cooperation_contact">
+        <div class="mrc_d5_d1">
+            <h2 class="mrc_d5_d1_h2">合作联系</h2>
+            <p class="mrc_d5_d1_p1">
+                我们为您提供个性化的售前购买咨询服务，以及全面的技术售后服务。<br/>
+                联系我们：<span class="mrc_d5_d1_p1_sp1">louisaliang@kugou.net</span>
+            </p>
+            <input value="louisaliang@kugou.net" class="mrc_d5_d1_ip1" id="mrc_d5_d1_ip1" readonly="readonly" >
+
+            <div class="mrc_d5_d1_d1" data-clipboard-action="copy" data-clipboard-target="#mrc_d5_d1_ip1" >复制邮箱</div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="s4mobile">
+    <div class="mrm_head">
+        <div class="mrmh_d1">
+            <img src="./img/logo_white.png" alt="" class="mrmh_d1_i1">
+        </div>
+        <div class="mrmh_d2"></div>
+    </div>
+
+    <div class="mrm_forfil"></div>
+
+    <div class="mrm_d1">
+        <ul class="mrm_d1_ul1">
+            <li class="mrm_d1_li1 _active"><a href="#m_introduction" class="mrm_d1_a1">服务介绍</a></li>
+            <li class="mrm_d1_li1"><a href="#m_salesprocess" class="mrm_d1_a1">购买流程</a></li>
+            <li class="mrm_d1_li1"><a href="#m_developercenter" class="mrm_d1_a1">开发者中心</a></li>
+            <li class="mrm_d1_li1"><a href="#m_contactus" class="mrm_d1_a1">联系我们</a></li>
+        </ul>
+    </div>
+
+    <div class="mrm_tab _active">
+        <div class="mrm_d2 _mtg0">
+            <h2 class="mrm_d2_h2 _title1">产品简介</h2>
+            <p class="mrm_d2_p1">
+                酷狗听歌识曲服务，基于业界领先技术和庞大曲库，识别速度快，识别结果准，能为移动应用、视频平台、智能车载、电台电视台等各类音乐识别业务提供强有力支持，支持包括“听歌识曲”“音乐监播”等多种服务需求。
+            </p>
+        </div>
+
+        <div class="mrm_d4">
+            <h2 class="mrm_d2_h2 _title2">主要功能</h2>
+            <div class="mrm_d4_d1">
+
+                <div class="mrm_d4_d1_d1 _active">
+                    <div class="mrm_d4_d1_d1_d0">
+                        <h3 class="mrm_d4_d1_d1_h3">听歌识曲</h3>
+                        <span class="mrm_d4_d1_d1_sp1"></span>
+                    </div>
+                    <div class="mrm_d4_d1_d1_d1">
+                        <div class="mrm_d4_d1_d1_d1_d1"></div>
+                        <div class="mrm_d4_d1_d1_d1_d2"></div>
+                        <p class="mrm_d4_d1_d1_d1_p1">平均3-4秒可准确识别音乐信息，支持听歌识曲、连续识曲、链接识曲、本地识曲等多场景音乐搜索方式。</p>
+                    </div>
+                </div>
+
+                <div class="mrm_d4_d1_d1 _active">
+                    <div class="mrm_d4_d1_d1_d0">
+                        <h3 class="mrm_d4_d1_d1_h3">短视频背景音乐</h3>
+                        <span class="mrm_d4_d1_d1_sp1"></span>
+                    </div>
+                    <div class="mrm_d4_d1_d1_d1">
+                        <div class="mrm_d4_d1_d1_d3 _desc2"></div>
+                        <div class="mrm_d4_d1_d1_d4">
+                            <span class="mrm_d4_d1_d1_d4_sp1 _desc2_ic1"></span>
+                            <p class="mrm_d4_d1_d1_d4_p1">通过识别出背景音乐做视频推荐和音乐归类</p>
+                        </div>
+                        <div class="mrm_d4_d1_d1_d4">
+                            <span class="mrm_d4_d1_d1_d4_sp1 _desc2_ic2"></span>
+                            <p class="mrm_d4_d1_d1_d4_p1">展示歌曲信息和同步当前音乐歌词（做歌词字幕）</p>
+                        </div>
+                        <div class="mrm_d4_d1_d1_d4">
+                            <span class="mrm_d4_d1_d1_d4_sp1 _desc2_ic3"></span>
+                            <p class="mrm_d4_d1_d1_d4_p1">屏蔽有版权问题的歌曲（唱片公司）内容上线</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mrm_d4_d1_d1 _active">
+                    <div class="mrm_d4_d1_d1_d0">
+                        <h3 class="mrm_d4_d1_d1_h3">直播</h3>
+                        <span class="mrm_d4_d1_d1_sp1"></span>
+                    </div>
+                    <div class="mrm_d4_d1_d1_d1">
+                        <div class="mrm_d4_d1_d1_d3 _desc3"></div>
+                        <div class="mrm_d4_d1_d1_d4">
+                            <span class="mrm_d4_d1_d1_d4_sp1 _desc3_ic1"></span>
+                            <p class="mrm_d4_d1_d1_d4_p1">识别直播间播放的歌曲名称</p>
+                        </div>
+                        <div class="mrm_d4_d1_d1_d4">
+                            <span class="mrm_d4_d1_d1_d4_sp1 _desc3_ic2"></span>
+                            <p class="mrm_d4_d1_d1_d4_p1">判断主播是否为真唱或跟唱（包括对口型、哼哼等）</p>
+                        </div>
+                        <div class="mrm_d4_d1_d1_d4">
+                            <span class="mrm_d4_d1_d1_d4_sp1 _desc3_ic3"></span>
+                            <p class="mrm_d4_d1_d1_d4_p1">用于推荐唱歌好听的主播</p>
+                        </div>
+                        <div class="mrm_d4_d1_d1_d4">
+                            <span class="mrm_d4_d1_d1_d4_sp1 _desc3_ic4"></span>
+                            <p class="mrm_d4_d1_d1_d4_p1">判断哪些是热门歌曲</p>
+                        </div>
+                        <div class="mrm_d4_d1_d1_d4">
+                            <span class="mrm_d4_d1_d1_d4_sp1 _desc3_ic5"></span>
+                            <p class="mrm_d4_d1_d1_d4_p1">判断背景音乐和主播翻唱是否为侵权内容和申报歌曲，录音版权费用</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mrm_d4_d1_d1 _active">
+                    <div class="mrm_d4_d1_d1_d0">
+                        <h3 class="mrm_d4_d1_d1_h3">音乐监播</h3>
+                        <span class="mrm_d4_d1_d1_sp1"></span>
+                    </div>
+                    <div class="mrm_d4_d1_d1_d1">
+                        <p class="mrm_d4_d1_d1_d1_p1">可针对各类流媒体音乐的播放内容、版权信息等进行识别和实时监控，统计热播歌曲榜单和歌曲收听率数据等，支持数据导出。</p>
+                    </div>
+                </div>
+
+                <div class="mrm_d4_d1_d1 _active">
+                    <div class="mrm_d4_d1_d1_d0">
+                        <h3 class="mrm_d4_d1_d1_h3">本地歌曲信息补全</h3>
+                        <span class="mrm_d4_d1_d1_sp1"></span>
+                    </div>
+                    <div class="mrm_d4_d1_d1_d1">
+                        <p class="mrm_d4_d1_d1_d1_p1">通过音频指纹的方式填补和替换本地歌曲不准确的ID信息。</p>
+                    </div>
+                </div>
+
+                <div class="mrm_d4_d1_d1 _active">
+                    <div class="mrm_d4_d1_d1_d0">
+                        <h3 class="mrm_d4_d1_d1_h3">车载音乐识别</h3>
+                        <span class="mrm_d4_d1_d1_sp1"></span>
+                    </div>
+                    <div class="mrm_d4_d1_d1_d1">
+                        <p class="mrm_d4_d1_d1_d1_p1">向整车品牌提供车载前装的音响和高清媒体播放解决方案。通过电台音乐识别服务，向用户提供电台中播放的歌曲信息，供用户查询和收藏。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mrm_d2 _spec">
+            <h2 class="mrm_d2_h2 _title3">优势介绍</h2>
+            <div class="mrm_d2_d1">
+                <div class="mrm_d2_d1_d1">
+                    <div class="mrm_d2_d1_d1_d1 _count1"></div>
+                    <h3 class="mrm_d2_d1_d1_h31">业界领先技术</h3>
+                    <p class="mrm_d2_d1_d1_p1">平均识别市场3～4s</p>
+                    <p class="mrm_d2_d1_d1_p1">精准度高达93%</p>
+                </div>
+                <div class="mrm_d2_d1_d2 _desc4_1"></div>
+            </div>
+            <div class="mrm_d2_d2">
+                <span class="mrm_d2_d2_sp1"></span>
+                <span class="mrm_d2_d2_sp1"></span>
+            </div>
+
+            <div class="mrm_d2_d1">
+                <div class="mrm_d2_d1_d1">
+                    <div class="mrm_d2_d1_d1_d1 _count2"></div>
+                    <h3 class="mrm_d2_d1_d1_h31">庞大曲库</h3>
+                    <p class="mrm_d2_d1_d1_p1">4000w正版曲库</p>
+                    <p class="mrm_d2_d1_d1_p1">全国、准确歌曲信息数据</p>
+                </div>
+                <div class="mrm_d2_d1_d2 _desc4_2"></div>
+            </div>
+            <div class="mrm_d2_d2">
+                <span class="mrm_d2_d2_sp1"></span>
+                <span class="mrm_d2_d2_sp1"></span>
+            </div>
+
+            <div class="mrm_d2_d1">
+                <div class="mrm_d2_d1_d1">
+                    <div class="mrm_d2_d1_d1_d1 _count3"></div>
+                    <h3 class="mrm_d2_d1_d1_h31">专业团队</h3>
+                    <p class="mrm_d2_d1_d1_p1">业内顶尖编辑团队</p>
+                    <p class="mrm_d2_d1_d1_p1">全平台实时新歌、热歌收录</p>
+                </div>
+                <div class="mrm_d2_d1_d2 _desc4_3"></div>
+            </div>
+            <div class="mrm_d2_d2">
+                <span class="mrm_d2_d2_sp1"></span>
+                <span class="mrm_d2_d2_sp1"></span>
+            </div>
+        </div>
+
+        <div class="mrm_d7">
+            <div class="mrm_d7_d0"></div>
+            <div class="mrm_d7_d1"></div>
+            <div class="mrm_d7_d2">
+                <div class="mrm_d7_d2_d1">
+                    <span class="mrm_d7_d2_sp1"></span>
+                    <h4 class="mrm_d7_d2_h41">MIREX</h4>
+                    <span class="mrm_d7_d2_sp1"></span>
+                </div>
+                <p class="mrm_d7_d2_p1">
+                    即 Music Information Retrieval Evaluation eXchange
+                    是全球的音乐信息检索竞赛，每年举办一次，有来自各个国家的研究所，院校和企业参与。
+                </p>
+            </div>
+            <div class="mrm_d7_d3"></div>
+            <p class="mrm_d7_p2">
+                在大赛中，
+                <span class="mrm_d7_sp2">酷狗音乐</span>
+                对测试集中的5692个嘈杂音频片段进行识别，
+                取得93.17%正确率的优秀成绩，超越历年所有参赛团队，打破最
+                高记录（91.88%正确率），推动了全球音乐检索技术的进一步发展。
+            </p>
+        </div>
+        <div class="mrm_d2">
+            <h2 class="mrm_d2_h2 _title4">成功案例</h2>
+            <div class="mrm_d2_d3 _vivo"></div>
+            <p class="mrm_d2_p2">
+                vivo激活用户数过亿，酷狗携手vivo听歌识曲服务，为广大用户提供精准音乐识别和检索服务。
+            </p>
+            <div class="mrm_d2_d3 _kuwo"></div>
+            <p class="mrm_d2_p2">
+                酷我音乐是一款知名的在线数字音乐平台，为广大用户提供丰富版权歌曲和无损音乐库。酷狗作为酷我听歌识曲的服务提供方，为酷我带来精准的听歌识曲和音乐识别服务。
+            </p>
+        </div>
+    </div>
+
+    <div class="mrm_tab">
+        <div class="mrm_d10 _mtg1">
+            <div class="mrm_d10_d1">
+                <div class="mrm_d10_d1_d1">
+                    <span class="mrm_d10_d1_sp1">STEP</span>
+                    <span class="mrm_d10_d1_sp2 _count1"></span>
+                    <span class="mrm_d10_d1_sp3"></span>
+                </div>
+                <div class="mrm_d10_d1_d2">
+                    <img src="./img/gm_desc1.png" alt="" class="mrm_d10_d1_i1">
+                    <div class="mrm_d10_d1_d2_d1">
+                        <h2 class="mrm_d10_d1_h21">商务对接</h2>
+                        <p class="mrm_d10_d1_p1">
+                            确认需要的服务类型，为您量身定制服务套餐
+                        </p>
+                        <a href="#m_contactus" class="mrm_d10_d1_a1">联系我们 →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mrm_d10_d1">
+                <div class="mrm_d10_d1_d1">
+                    <span class="mrm_d10_d1_sp1">STEP</span>
+                    <span class="mrm_d10_d1_sp2 _count2"></span>
+                    <span class="mrm_d10_d1_sp3"></span>
+                </div>
+                <div class="mrm_d10_d1_d2">
+                    <img src="./img/gm_desc2.png" alt="" class="mrm_d10_d1_i1">
+                    <div class="mrm_d10_d1_d2_d1">
+                        <h2 class="mrm_d10_d1_h21">提供报价</h2>
+                        <p class="mrm_d10_d1_p1">
+                            为您的服务套餐提供具体的报价方案
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mrm_d10_d1">
+                <div class="mrm_d10_d1_d1">
+                    <span class="mrm_d10_d1_sp1">STEP</span>
+                    <span class="mrm_d10_d1_sp2 _count3"></span>
+                    <span class="mrm_d10_d1_sp3"></span>
+                </div>
+                <div class="mrm_d10_d1_d2">
+                    <img src="./img/gm_desc3.png" alt="" class="mrm_d10_d1_i1">
+                    <div class="mrm_d10_d1_d2_d1">
+                        <h2 class="mrm_d10_d1_h21">确认购买</h2>
+                        <p class="mrm_d10_d1_p1">
+                            双方签订合作合同
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mrm_d10_d1 _d10spec">
+                <div class="mrm_d10_d1_d1">
+                    <span class="mrm_d10_d1_sp1">STEP</span>
+                    <span class="mrm_d10_d1_sp2 _count4"></span>
+                    <span class="mrm_d10_d1_sp3"></span>
+                </div>
+                <div class="mrm_d10_d1_d2">
+                    <img src="./img/gm_desc4.png" alt="" class="mrm_d10_d1_i1">
+                    <div class="mrm_d10_d1_d2_d1">
+                        <h2 class="mrm_d10_d1_h21">技术接入（支持跨平台接入）</h2>
+                        <p class="mrm_d10_d1_p1">
+                            支持iOS、Android SDK，更多接入方式持续更新中
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mrm_tab">
+        <div class="mrm_d9 mrm_d2 _mtg2">
+            <h2 class="mrm_d9_h21">服务SDK</h2>
+            <div class="mrm_d2_d2">
+                <span class="mrm_d2_d2_sp1"></span>
+                <span class="mrm_d2_d2_sp1"></span>
+            </div>
+            <div class="mrm_d9_d1">
+                <div class="mrm_d9_d1_d1">
+                    <img src="./img/icon_buy_android.png" alt="" class="mrm_d9_d1_i1">
+                    <span class="mrm_d9_d1_sp1">Android平台</span>
+                    <span class="mrm_d9_d1_sp2">支持</span>
+                </div>
+                <div class="mrm_d9_d1_d2"></div>
+                <div class="mrm_d9_d1_d1">
+                    <img src="./img/icon_buy_apple.png" alt="" class="mrm_d9_d1_i1">
+                    <span class="mrm_d9_d1_sp1">IOS平台</span>
+                    <span class="mrm_d9_d1_sp2">支持</span>
+                </div>
+            </div>
+            <div class="mrm_d2_d2">
+                <span class="mrm_d2_d2_sp1"></span>
+                <span class="mrm_d2_d2_sp1"></span>
+            </div>
+
+            <a href="#m_contactus" class="mrm_d9_d1_a1">联系我们，获得下载权限 ></a>
+
+            <h2 class="mrm_d9_h21">技术接入流程</h2>
+            <ul class="mrm_d9_ul1">
+                <li class="mrm_d9_li1">工程导入Jar包与so库</li>
+                <li class="mrm_d9_li1">获取录音权限</li>
+                <li class="mrm_d9_li1">创建识曲对象</li>
+                <li class="mrm_d9_li1">设置申请的appid与appkey</li>
+                <li class="mrm_d9_li1">启动识曲</li>
+                <li class="mrm_d9_li1">接收识曲结果回调</li>
+                <li class="mrm_d9_li1">退出销毁识曲对象</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="mrm_tab">
+        <div class="mrm_d11 ">
+            <img src="./img/pic_concat.png" alt="" class="mrm_d6_i1">
+            <h2 class="mrm_d9_h21">联系我们</h2>
+        </div>
+        <div class="mrm_d6 _mtg3">
+            <div class="mrm_d6_d1">
+                <p class="mrm_d6_d1_p1">
+                    我们为您提供个性化的售前购买咨询服务，以及全面的技术售后服务。
+                    <br>
+                    联系我们：louisaliang@kugou.net
+                </p>
+                <input  value="louisaliang@kugou.net" class="mrm_d6_d1_ipt1" id="mrm_d6_d1_ipt1" readonly="readonly" >
+                <div class="mrm_d6_d1_d1" data-clipboard-action="copy" data-clipboard-target="#mrm_d6_d1_ipt1" >复制邮箱</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="mrm_d8">
+        <div class="mrm_d8_d1"></div>
+        <div class="mrm_d8_d2"></div>
+    </div>
+
+</div>
+
+<div class="mrc_goup"></div>
+
+
+<style>
+    p.copyright {
+        text-align: center;
+        color: #fff;
+        padding: 50px;
+        background: #2c323b
+    }
+    @media screen and (max-width: 1200px) {
+        p.copyright {
+            display: none;
+            text-align: center;
+            color: #fff;
+            padding: 16px;
+            font-size: 12px;
+        }
+    }
+</style>
+
+<footer class="footer">
+    <div>
+        <div>
+            <a href="" class="footer_1">关于青鸟</a>&nbsp;|&nbsp;
+            <a href="" class="footer_1">监督举报</a>&nbsp;|&nbsp;
+            <a href=""class="footer_1">商务合作</a>&nbsp;|&nbsp;
+            <a href="" class="footer_1">广告服务</a>&nbsp;|&nbsp;
+            <a href="" class="footer_1">投诉指引</a>&nbsp;|&nbsp;
+            <a href="" class="footer_1">隐私政策</a>&nbsp;|&nbsp;
+            <a href="" class="footer_1">儿童隐私注册</a>&nbsp;|&nbsp;
+            <a href="" class="footer_1">用户服务协议</a>&nbsp;|&nbsp;
+            <a href="" class="footer_1">青鸟音乐人</a>&nbsp;|&nbsp;
+            <a href="" class="footer_1">青鸟直通车</a>&nbsp;|&nbsp;
+            <a href="" class="footer_1">招聘信息</a>&nbsp;|&nbsp;
+            <a href="" class="footer_1">客服中心</a>&nbsp;|&nbsp;
+            <a href="" class="footer_1">用户体验计划</a>
+        </div>
+        <div>
+            <a href="https://www.kugou.com/ts/album/4094342/" class="footer-2">白眉大侠</a>
+            <a href="https://www.kugou.com/ts/album/18804082/" class="footer-2">茅山捉鬼人</a>
+            <a href="https://www.kugou.com/ts/album/2892259/" class="footer-2">夜听FM</a>
+            <a href="https://www.kugou.com/ts/album/6900644/" class="footer-2">贝瓦故事</a>
+            <a href="https://www.kugou.com/ts/album/37885807/" class="footer-2">文武贝流行钢琴（1）</a>
+            <a href="https://www.kugou.com/ts/album/41731833/" class="footer-2">郭德纲</a>
+            <a href="https://www.kugou.com/ts/album/36794329/" class="footer-2">原创静心舒眠纯音乐</a>
+            <a href="https://www.kugou.com/ts/album/9236581/" class="footer-2">黑水公园</a>
+            <a href="https://www.kugou.com/ts/album/9239516/" class="footer-2">舒烟电台</a>
+            <a href="https://www.kugou.com/ts/album/3035508/" class="footer-2">晚安故事盒子</a>
+            <a href="https://www.kugou.com/ts/album/24771442/" class="footer-2">哄睡故事</a>
+            <a href="https://www.kugou.com/ts/album/43730639/" class="footer-2">隋唐演义</a>
+            <a href="https://www.kugou.com/ts/album/8090766/" class="footer-2">程一电台</a>
+            <a href="https://www.kugou.com/ts/album/43588726/" class="footer-2">宝宝巴土儿歌</a>
+            <a href="https://www.kugou.com/ts/album/37690514/" class="footer-2">这首歌，等你来听</a>
+            <a href="https://www.kugou.com/ts/album/39843428/" class="footer-2">斗罗大陆</a>
+            <a href="https://www.kugou.com/ts/album/8529420/" class="footer-2">水浒传</a>
+            <a href="https://www.kugou.com/ts/album/940008/" class="footer-2">星空下的钢琴曲1</a>
+            <a href="https://www.kugou.com/ts/album/37191013/" class="footer-2">盗墓笔记</a>
+            <a href="https://www.kugou.com/ts/album/18812582/" class="footer-2">抬棺匠</a>
+            <a href="https://www.kugou.com/ts/album/3035508/" class="footer-2">晚安故事盒子</a>
+            <a href="https://www.kugou.com/ts/album/10373617/" class="footer-2">无敌剑域</a>
+            <a href="https://www.kugou.com/ts/album/39145099/" class="footer-2">治疗师｜3D助眠解压沉浸式音乐</a>
+            <a href="https://www.kugou.com/ts/album/36517838/" class="footer-2">小猪佩奇</a>
+            <a href="https://www.kugou.com/ts/album/2470525/" class="footer-2">鬼吹灯经典系列</a>
+            <a href="https://www.kugou.com/ts/album/40025235/" class="footer-2">上门龙婿</a>
+            <a href="https://www.kugou.com/ts/album/39570266/" class="footer-2">超牛女婿</a>
+            <a href="https://www.kugou.com/ts/album/37741217/" class="footer-2">奇葩修真天才</a>
+            <a href="https://www.kugou.com/ts/album/37014995/" class="footer-2">治愈失眠:雷雨声</a>
+            <a href="https://www.kugou.com/ts/album/1078813/" class="footer-2">蕊希电台</a>
+            <a href="https://www.kugou.com/zt/0004/" class="footer-2">成语故事专题</a>
+            <a href="https://www.kugou.com/zt/0005/" class="footer-2">儿童故事专题</a>
+            <a href="https://www.kugou.com/zt/0006/" class="footer-2">鬼吹灯专题</a>
+        </div>
+        <div>
+            <p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@kugou.com</p>
+
+            <p>信息网络传播视听节目许可证 ××××××× 增值电信业务经营许可证豫××-××××××××</p>
+
+            <p>广播电视节目许可证（豫）字第××××号  营业性演出许可证穗天演440106025  营业执照</p>
+
+            <p>穗公网监备案证第440106500101167  互联网药品信息服务资格证编号（豫）-非经营性-2021-0018  豫公网备案  5646121551455465</p>
+
+            <p>互联网不良信息举报中心：www.12377.cn    酷狗不良信息举报邮箱：jubao_music@kugou.net    客服邮箱：kefu@kugou.com</p>
+
+            <p>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2004-2021 KuGou-Inc.All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://jswebcollects.kugou.com/v2/web/collect.js?appid=1010"></script>
+
+
+</body>
+</html>

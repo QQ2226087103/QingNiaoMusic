@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>听书</title>
+    <link rel="stylesheet" href="css/listeningBook.css"/>
+</head>
+<body>
+<div class="main3">
+    <div class="header">
+        <h1 class="logo">
+            <a href="">
+                <img src="image/logo.png" alt="青鸟音乐">
+            </a>
+        </h1>
+        <div class="search_input">
+            <input type="text" placeholder="张芸京 偏爱" value="">
+            <div class="search_button">
+                <a href="#">
+                    <img src="image/search_icon.png" alt="搜索">
+                </a>
+            </div>
+        </div>
+        <div class="topNav">
+            <ul>
+                <li><a href="#" target="_blank"><span>客服中心</span></a></li>
+                <li><a href="#" target="_blank"><span>广纳贤士</span></a></li>
+                <li><a href="#" target="_blank"><span>商务合作</span></a></li>
+                <li><a href="#" target="_blank"><span>会员中心</span></a></li>
+            </ul>
+            <button type="button" onclick="dianwo()" class="login_button" id="login_button">登录|注册</button>
+            <div class="Popup" id='Popup'>
+                <div class="tankuang">
+                    <div id="header">
+                        <div><img src="img/logo.png"/></div>
+                        <div id="header-right" onclick="hidder()">x</div>
+                    </div>
+                    <div id="article">
+                        <h1>账号密码登录</h1>
+                        <input type="text" name="username"/><br/>
+                        <input type="password" name="password"/><br/>
+                        <input type="submit" value="授权并登录"/>
+                    </div>
+                    <div id="footer">
+                        <a href="">忘了密码？</a>
+                        <a href="注册.html" target="_blank">注册新账号</a>
+                        <a href="">意见反馈</a>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                document.getElementById('Popup').style.display="none";
+                function dianwo(){
+                    document.getElementById('Popup').style.display="";
+                }
+                function hidder(){
+                    document.getElementById('Popup').style.display="none";
+                }
+            </script>
+        </div>
+    </div>
+    <div class="navWrap">
+        <div class="nav">
+            <ul class="homeNav">
+                <li><a href="首页.html" class="normalOne">首页</a></li>
+                <li><a href="榜单.html" class="normalTwo">榜单</a></li>
+                <li><a href="听书.html" class="normalThree">听书</a></li>
+                <li><a href="下载青鸟.html" class="normalFour">下载青鸟</a></li>
+                <li><a href="听歌识曲.html" class="normalFive">听歌识曲</a></li>
+                <li><a href="#" class="normalSix">更多</a></li>
+            </ul>
+            <ul class="subNav">
+                <li><a href="#"><img src="" alt="">直播</a></li>
+                <li><a href="#"><img src="" alt="">商城</a></li>
+                <li><a href="#"><img src="" alt="">音乐人</a></li>
+                <li><a href="#"><img src="" alt="">代理商</a></li>
+                <li><a href="#"><img src="" alt="">主播电台</a></li>
+                <li><a href="#"><img src="" alt="">开放平台</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="section">
+        <div class="div_1">
+            <ul>
+                <li><a href=""><img src="image/1.png" /><p>有声小说</p></a></li>
+                <li><a href=""><img src="image/2.png"/><p>儿童天地</p></a></li>
+                <li><a href=""><img src="image/3.png"/><p>相声曲艺</p></a></li>
+                <li><a href=""><img src="image/4.png"/><p>情感生活</p></a></li>
+                <li><a href=""><img src="image/5.png"/><p>粤语</p></a></li>
+                <li><a href=""><img src="image/6.png"/><p>助眠解压</p></a></li>
+                <li><a href=""><img src="image/7.png"/><p>娱乐搞笑</p></a></li>
+                <li><a href=""><img src="image/8.png"/><p>广播剧</p></a></li>
+                <li><a href=""><img src="image/9.png"/><p>历史人文</p></a></li>
+                <li><a href=""><img src="image/10.png"/><p>自我充电</p></a></li>
+                <li><a href=""><img src="image/11.png"/><p>二次元</p></a></li>
+                <li><a href=""><img src="image/12.png"/><p>中小学必备</p></a></li>
+                <li><a href=""><img src="image/13.png"/><p>外语</p></a></li>
+            </ul>
+        </div>
+
+        <div class="div_2">
+            <div class="div_2-1">
+                <div class="div_2-2"></div>
+                <h1><span class="span_1">精彩</span>专题 <a href=""><span class="span_2">换一批</span></a></h1>
+                <div><img src="image/25.png" width="230px" height="100px" class="a"/></div>
+                <div><img src="image/26.png" width="230px" height="100px" class="a"/></div>
+                <div><img src="image/27.png" width="230px" height="100px" class="a"/></div>
+            </div>
+        </div>
+
+        <div class="div_3">
+            <h1><span class="span_1">每日</span>推荐 <a href=""><span class="span_2">换一批</span></a></h1>
+            <ul>
+                <div class="div-1"><a href=""><img src="image/28.png" class="a"/><p>上门龙婿|至尊龙婿叶</p></a></div>
+                <div class="div-1"><a href=""><img src="image/29.png" class="a"/><p>穿越之倾世小王妃</p></a></div>
+                <div class="div-1"><a href=""><img src="image/30.png" class="a"/><p>哄睡故事</p></a></div>
+                <div class="div-1"><a href=""><img src="image/31.png" class="a"/><p>妖龙古帝</p></a></div>
+                <div class="div-1"><a href=""><img src="image/32.png" class="a"/><p>dj阿勇电子琴伴奏</p></a></div>
+                <div class="div-1"><a href=""><img src="image/33.png" class="a"/><p>成长故事</p></a></div>
+            </ul>
+        </div>
+
+        <div class="div_4">
+            <h1><span class="span_1">有声</span>小说 <span class="span_2">更多</span></h1>
+            <div class="div-1"><a href=""><img src="image/34.png" width="140px" height="140px" class="a"/><p>极品捡漏王</p></a></div>
+            <div class="div-1"><a href=""><img src="image/35.png" width="140px" height="140px" class="a"/><p>阴阳代理师</p></a></div>
+            <div class="div-1"><a href=""><img src="image/36.png" width="140px" height="140px" class="a"/><p>太古剑尊</p></a></div>
+            <div class="div-1"><a href=""><img src="image/37.jpg" width="140px" height="140px" class="a"/><p>飞针神医</p></a></div>
+        </div>
+
+        <div class="div_5">
+            <h1><span class="span_1">儿童</span>天地<span class="span_2">更多</span></h1>
+            <div class="div-1"><a href=""><img src="image/38.png" width="140px" height="140px" class="a"/><p>小黄人《神偷奶爸》</p></a></div>
+            <div class="div-1"><a href=""><img src="image/39.png" width="140px" height="140px" class="a"/><p>儿童情商课</p></a></div>
+            <div class="div-1"><a href=""><img src="image/40.png" width="140px" height="140px" class="a"/><p>从"小"读到"大"</p></a></div>
+            <div class="div-1"><a href=""><img src="image/41.png" width="140px" height="140px" class="a"/><p>娇娇姐姐讲历史</p></a></div>
+        </div>
+
+        <div class="div_6">
+            <h1><span class="span_1">相声</span>曲艺<span class="span_2">更多</span></h1>
+            <div class="div-1"><a href=""><img src="image/42.png" width="140px" height="140px" class="a"/><p>老郭有新番第一季</p></a></div>
+            <div class="div-1"><a href=""><img src="image/43.png" width="140px" height="140px" class="a"/><p>德云逗笑社第二季</p></a></div>
+            <div class="div-1"><a href=""><img src="image/44.png" width="140px" height="140px" class="a"/><p>单田芳：白眉大侠</p></a></div>
+            <div class="div-1"><a href=""><img src="image/45.png" width="140px" height="140px" class="a"/><p>说岳后传</p></a></div>
+        </div>
+
+        <div class="div_7">
+            <h1><span class="span_1">情感</span>生活<span class="span_2">更多</span></h1>
+            <div class="div-1"><a href=""><img src="image/46.png" width="140px" height="140px" class="a"/><p>晚安诗集</p></a></div>
+            <div class="div-1"><a href=""><img src="image/47.png" width="140px" height="140px" class="a"/><p>深夜谈吃</p></a></div>
+            <div class="div-1"><a href=""><img src="image/48.png" width="140px" height="140px" class="a"/><p>深夜小馆</p></a></div>
+            <div class="div-1"><a href=""><img src="image/49.png" width="140px" height="140px" class="a"/><p>男人看重的爱情规则</p></a></div>
+        </div>
+
+        <div class="div_8">
+            <h1><span class="span_1">娱乐</span>搞笑<span class="span_2">更多</span></h1>
+            <div class="div-1"><a href=""><img src="image/50.jpg" width="140px" height="140px" class="a"/><p>吐槽脱口秀</p></a></div>
+            <div class="div-1"><a href=""><img src="image/51.jpg" width="140px" height="140px" class="a"/><p>越听越开心</p></a></div>
+            <div class="div-1"><a href=""><img src="image/52.jpg" width="140px" height="140px" class="a"/><p>硬核电台2021</p></a></div>
+            <div class="div-1"><a href=""><img src="image/53.jpg" width="140px" height="140px" class="a"/><p>阿斗讲电影故事</p></a></div>
+        </div>
+
+        <div class="div_9">
+            <h1><span class="span_1">助眠</span>解压<span class="span_2">更多</span></h1>
+            <div class="div-1"><a href=""><img src="image/54.jpg" width="140px" height="140px" class="a"/><p>放松音乐|经典老歌</p></a></div>
+            <div class="div-1"><a href=""><img src="image/55.jpg" width="140px" height="140px" class="a"/><p>手碟疗愈</p></a></div>
+            <div class="div-1"><a href=""><img src="image/56.jpg" width="140px" height="140px" class="a"/><p>聆听大自然</p></a></div>
+            <div class="div-1"><a href=""><img src="image/58.jpg" width="140px" height="140px" class="a"/><p>竹笛曲儿</p></a></div>
+        </div>
+
+        <div class="div_10">
+            <h1><span class="span_1">历史</span>人文<span class="span_2">更多</span></h1>
+            <div class="div-1"><a href=""><img src="image/59.jpg" width="140px" height="140px" class="a"/><p>念荣(张国荣传记)</p></a></div>
+            <div class="div-1"><a href=""><img src="image/60.jpg" width="140px" height="140px" class="a"/><p>女皇武则天</p></a></div>
+            <div class="div-1"><a href=""><img src="image/61.jpg" width="140px" height="140px" class="a"/><p>西游记</p></a></div>
+            <div class="div-1"><a href=""><img src="image/62.jpg" width="140px" height="140px" class="a"/><p>佛经</p></a></div>
+        </div>
+
+        <div class="div_11">
+            <h1><span class="span_1">广播剧</span><span class="span_2">更多</span></h1>
+            <div class="div-1"><a href=""><img src="image/63.jpg" width="140px" height="140px" class="a"/><p>剑来(精品三播)</p></a></div>
+            <div class="div-1"><a href=""><img src="image/64.jpg" width="140px" height="140px" class="a"/><p>北洋夜行记</p></a></div>
+            <div class="div-1"><a href=""><img src="image/65.jpg" width="140px" height="140px" class="a"/><p>少女暗恋成真</p></a></div>
+            <div class="div-1"><a href=""><img src="image/66.jpg" width="140px" height="140px" class="a"/><p>难哄|青春多人记</p></a></div>
+        </div>
+
+        <div class="div_12">
+            <h1><span class="span_1">粤语</span><span class="span_2">更多</span></h1>
+            <div class="div-1"><a href=""><img src="image/67.jpg" width="140px" height="140px" class="a"/><p>粤讲粤深情</p></a></div>
+            <div class="div-1"><a href=""><img src="image/82.png" width="140px" height="140px" class="a"/><p>两个老妖怪</p></a></div>
+            <div class="div-1"><a href=""><img src="image/68.jpg" width="140px" height="140px" class="a"/><p>粤come听</p></a></div>
+            <div class="div-1"><a href=""><img src="image/83.png" width="140px" height="140px" class="a"/><p>爱的求恋期(粤语)</p></a></div>
+        </div>
+
+        <div class="div_13">
+            <h1><span class="span_1">自我</span>充电<span class="span_2">更多</span></h1>
+            <div class="div-1"><a href=""><img src="image/70.jpg" width="140px" height="140px" class="a"/><p>5分钟心理学</p></a></div>
+            <div class="div-1"><a href=""><img src="image/71.jpg" width="140px" height="140px" class="a"/><p>21天自控训练营</p></a></div>
+            <div class="div-1"><a href=""><img src="image/72.jpg" width="140px" height="140px" class="a"/><p>蔡康永的说话之道</p></a></div>
+            <div class="div-1"><a href=""><img src="image/84.jpg" width="140px" height="140px" class="a"/><p>羊皮卷(全集)</p></a></div>
+        </div>
+
+        <div class="div_14">
+            <h1><span class="span_1">二次元</span><span class="span_2">更多</span></h1>
+            <div class="div-1"><a href=""><img src="image/74.jpg" width="140px" height="140px" class="a"/><p>王者荣耀英雄台词</p></a></div>
+            <div class="div-1"><a href=""><img src="image/75.jpg" width="140px" height="140px" class="a"/><p>英雄联盟励志语录</p></a></div>
+            <div class="div-1"><a href=""><img src="image/76.jpg" width="140px" height="140px" class="a"/><p>二次元致你的情书</p></a></div>
+            <div class="div-1"><a href=""><img src="image/85.jpg" width="140px" height="140px" class="a"/><p>不问曲终人聚散</p></a></div>
+        </div>
+
+        <div class="div_15">
+            <h1><span class="span_1">外语</span><span class="span_2">更多</span></h1>
+            <div class="div-1"><a href=""><img src="image/78.jpg" width="140px" height="140px" class="a"/><p>英文儿歌慢节奏</p></a></div>
+            <div class="div-1"><a href=""><img src="image/79.jpg" width="140px" height="140px" class="a"/><p>英语口语每日养成</p></a></div>
+            <div class="div-1"><a href=""><img src="image/80.jpg" width="140px" height="140px" class="a"/><p>早安英语</p></a></div>
+            <div class="div-1"><a href=""><img src="image/81.jpg" width="140px" height="140px" class="a"/><p>商务英语随口说</p></a></div>
+        </div>
+
+        <div class="div_16">
+            <h1><span class="span_1">有声小说</span>新品榜</h1>
+            <div class="div-1"><a href=""><img src="image/86.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;我居然是超级富二代</a></div>
+            <div class="div-1"><a href=""><img src="image/87.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;医婿</a></div>
+            <div class="div-1"><a href=""><img src="image/88.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;异世邪君(风凌天下作品)</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">4</div>末日猎杀者(原名:我在地狱中诞生)</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">5</div>第一兵王</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">6</div>不败战神</a></div>
+        </div>
+
+        <div class="div_17">
+            <h1><span class="span_1">儿童天地</span>新品榜</h1>
+            <div class="div-1"><a href=""><img src="image/89.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;超级宝贝JoJo 第二季</a></div>
+            <div class="div-1"><a href=""><img src="image/90.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;宝宝巴士儿歌</a></div>
+            <div class="div-1"><a href=""><img src="image/91.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;小伴龙早教儿歌</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">4</div>火火兔快乐儿歌</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">5</div>火火兔益智儿歌</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">6</div>奶爸奶妈哄睡神器|婴儿安眠曲</a></div>
+        </div>
+
+        <div class="div_18">
+            <h1><span class="span_1">相声曲艺</span>新品榜</h1>
+            <div class="div-1"><a href=""><img src="image/92.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;德云逗笑社第二季完整版</a></div>
+            <div class="div-1"><a href=""><img src="image/93.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;老郭有新番第一季·郭德纲品...</a></div>
+            <div class="div-1"><a href=""><img src="image/94.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;速听郭德纲语录·老郭有新番...</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">4</div>再续龙虎风云会</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">5</div>德云逗笑社第二季相声纯享版</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">6</div>郭德纲品三国·老郭有新番第一季评书...</a></div>
+        </div>
+
+        <div class="div_19">
+            <h1><span class="span_1">情感生活</span>新品榜</h1>
+            <div class="div-1"><a href=""><img src="image/95.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;夜听电台</a></div>
+            <div class="div-1"><a href=""><img src="image/96.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;一段往事一首歌</a></div>
+            <div class="div-1"><a href=""><img src="image/97.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;Qiao Yin 电台</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">4</div>心事酒馆</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">5</div>素言素语</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">6</div>都市夜阑珊</a></div>
+        </div>
+
+        <div class="div_20">
+            <h1><span class="span_1">娱乐搞笑</span>新品榜</h1>
+            <div class="div-1"><a href=""><img src="image/98.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;抖音歌曲最火的歌2021</a></div>
+            <div class="div-1"><a href=""><img src="image/99.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;脱口秀大会第四季</a></div>
+            <div class="div-1"><a href=""><img src="image/100.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;dj舞曲劲暴舞曲</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">4</div>旺仔小乔</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">5</div>网络流行歌曲</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">6</div>后浪新声</a></div>
+        </div>
+
+        <div class="div_21">
+            <h1><span class="span_1">助眠解压</span>新品榜</h1>
+            <div class="div-1"><a href=""><img src="image/101.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;治愈轻音|岁月静好，柔软...</a></div>
+            <div class="div-1"><a href=""><img src="image/102.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;低保真氛围音|睡前的放松时...</a></div>
+            <div class="div-1"><a href=""><img src="image/103.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;助眠纯音乐|失眠患者福音</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">4</div>助眠小曲|安享吉他的慵懒旋律</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">5</div>葫芦丝:放松舒压音乐100首</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">6</div>KUMI教你听懂纯音乐</a></div>
+        </div>
+
+        <div class="div_22">
+            <h1><span class="span_1">历史人文</span>新品榜</h1>
+            <div class="div-1"><a href=""><img src="image/104.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;佛说万物生</a></div>
+            <div class="div-1"><a href=""><img src="image/105.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;华严境</a></div>
+            <div class="div-1"><a href=""><img src="image/106.png" width="80px" height="80px" class="a"/>&nbsp;&nbsp;微妙梵音念诵系列</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">4</div>梵唱大悲咒</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">5</div>杜月笙全传</a></div>
+            <div class="div_16-1"><a href=""><div class="span_3">6</div>大唐兴亡三百年(原名《血腥的盛唐》)</a></div>
+        </div>
+
+        <div class="div_23">
+            <h1><span class="span_1">免费</span>榜</h1>
+            <div class="div_16-2"><a href=""><img src="image/107.png" width="70px" height="70px" class="a"/>&nbsp;&nbsp;儿童儿歌故事大全</a></div>
+            <div class="div_16-2"><a href=""><img src="image/108.png" width="70px" height="70px" class="a"/>&nbsp;&nbsp;抖音最火歌曲排行榜</a></div>
+            <div class="div_16-2"><a href=""><img src="image/109.png" width="70px" height="70px" class="a"/>&nbsp;&nbsp;斗罗大陆</a></div>
+            <a href=""><div class="div_16-3"><span class="span_4">4</span>流行筝曲古风集</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">5</span>睡前故事-晚安宝贝</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">6</span>安全警长啦咘啦哆|宝宝巴士故事</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">7</span>米小圈上学记:一二三年级</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">8</span>超级宝贝JoJo【全网热播】</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">9</span>宝宝巴士英文儿歌</div></a>
+        </div>
+
+        <div class="div_24">
+            <h1><span class="span_1">飙升</span>榜</h1>
+            <div class="div_16-2"><a href=""><img src="image/110.png" width="70px" height="70px" class="a"/>&nbsp;&nbsp;大自然疗愈纯音乐|深度...</a></div>
+            <div class="div_16-2"><a href=""><img src="image/111.png" width="70px" height="70px" class="a"/>&nbsp;&nbsp;儿童儿歌故事大全</a></div>
+            <div class="div_16-2"><a href=""><img src="image/112.png" width="70px" height="70px" class="a"/>&nbsp;&nbsp;Delta脑波音乐减压深度...</a></div>
+            <a href=""><div class="div_16-3"><span class="span_4">4</span>星梦偶像计划 广播剧</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">5</span>德云斗笑社第二季完整版</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">6</span>中国民间故事|诡故事</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">7</span>文武贝流行钢琴(新&持续更新)</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">8</span>情感夜话</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">9</span>都市最强神医【上门龙婿】</div></a>
+        </div>
+
+        <div class="div_25">
+            <h1><span class="span_1">热销</span>榜</h1>
+            <div class="div_16-2"><a href=""><img src="image/113.png" width="70px" height="70px" class="a"/>&nbsp;&nbsp;茅山捉鬼人</a></div>
+            <div class="div_16-2"><a href=""><img src="image/114.png" width="70px" height="70px" class="a"/>&nbsp;&nbsp;上门龙婿|至尊龙婿叶辰萧...</a></div>
+            <div class="div_16-2"><a href=""><img src="image/115.png" width="70px" height="70px" class="a"/>&nbsp;&nbsp;女总裁的上门女婿</a></div>
+            <a href=""><div class="div_16-3"><span class="span_4">4</span>修罗武神</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">5</span>万古仙尊</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">6</span>闪婚总裁契约妻</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">7</span>一品嫡女</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">8</span>无敌剑域</div></a>
+            <a href=""><div class="div_16-3"><span class="span_4">9</span>私房小木匠</div></a>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div>
+                <a href="" class="footer_1">关于青鸟</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">监督举报</a>&nbsp;|&nbsp;
+                <a href=""class="footer_1">商务合作</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">广告服务</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">投诉指引</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">隐私政策</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">儿童隐私注册</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">用户服务协议</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">青鸟音乐人</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">青鸟直通车</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">招聘信息</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">客服中心</a>&nbsp;|&nbsp;
+                <a href="" class="footer_1">用户体验计划</a>
+            </div>
+            <div>
+                <a href="https://www.kugou.com/ts/album/4094342/" class="footer-2">白眉大侠</a>
+                <a href="https://www.kugou.com/ts/album/18804082/" class="footer-2">茅山捉鬼人</a>
+                <a href="https://www.kugou.com/ts/album/2892259/" class="footer-2">夜听FM</a>
+                <a href="https://www.kugou.com/ts/album/6900644/" class="footer-2">贝瓦故事</a>
+                <a href="https://www.kugou.com/ts/album/37885807/" class="footer-2">文武贝流行钢琴（1）</a>
+                <a href="https://www.kugou.com/ts/album/41731833/" class="footer-2">郭德纲</a>
+                <a href="https://www.kugou.com/ts/album/36794329/" class="footer-2">原创静心舒眠纯音乐</a>
+                <a href="https://www.kugou.com/ts/album/9236581/" class="footer-2">黑水公园</a>
+                <a href="https://www.kugou.com/ts/album/9239516/" class="footer-2">舒烟电台</a>
+                <a href="https://www.kugou.com/ts/album/3035508/" class="footer-2">晚安故事盒子</a>
+                <a href="https://www.kugou.com/ts/album/24771442/" class="footer-2">哄睡故事</a>
+                <a href="https://www.kugou.com/ts/album/43730639/" class="footer-2">隋唐演义</a>
+                <a href="https://www.kugou.com/ts/album/8090766/" class="footer-2">程一电台</a>
+                <a href="https://www.kugou.com/ts/album/43588726/" class="footer-2">宝宝巴土儿歌</a>
+                <a href="https://www.kugou.com/ts/album/37690514/" class="footer-2">这首歌，等你来听</a>
+                <a href="https://www.kugou.com/ts/album/39843428/" class="footer-2">斗罗大陆</a>
+                <a href="https://www.kugou.com/ts/album/8529420/" class="footer-2">水浒传</a>
+                <a href="https://www.kugou.com/ts/album/940008/" class="footer-2">星空下的钢琴曲1</a>
+                <a href="https://www.kugou.com/ts/album/37191013/" class="footer-2">盗墓笔记</a>
+                <a href="https://www.kugou.com/ts/album/18812582/" class="footer-2">抬棺匠</a>
+                <a href="https://www.kugou.com/ts/album/3035508/" class="footer-2">晚安故事盒子</a>
+                <a href="https://www.kugou.com/ts/album/10373617/" class="footer-2">无敌剑域</a>
+                <a href="https://www.kugou.com/ts/album/39145099/" class="footer-2">治疗师｜3D助眠解压沉浸式音乐</a>
+                <a href="https://www.kugou.com/ts/album/36517838/" class="footer-2">小猪佩奇</a>
+                <a href="https://www.kugou.com/ts/album/2470525/" class="footer-2">鬼吹灯经典系列</a>
+                <a href="https://www.kugou.com/ts/album/40025235/" class="footer-2">上门龙婿</a>
+                <a href="https://www.kugou.com/ts/album/39570266/" class="footer-2">超牛女婿</a>
+                <a href="https://www.kugou.com/ts/album/37741217/" class="footer-2">奇葩修真天才</a>
+                <a href="https://www.kugou.com/ts/album/37014995/" class="footer-2">治愈失眠:雷雨声</a>
+                <a href="https://www.kugou.com/ts/album/1078813/" class="footer-2">蕊希电台</a>
+                <a href="https://www.kugou.com/zt/0004/" class="footer-2">成语故事专题</a>
+                <a href="https://www.kugou.com/zt/0005/" class="footer-2">儿童故事专题</a>
+                <a href="https://www.kugou.com/zt/0006/" class="footer-2">鬼吹灯专题</a>
+            </div>
+            <div>
+                <p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@kugou.com</p>
+
+                <p>信息网络传播视听节目许可证 ××××××× 增值电信业务经营许可证豫××-××××××××</p>
+
+                <p>广播电视节目许可证（豫）字第××××号  营业性演出许可证穗天演440106025  营业执照</p>
+
+                <p>穗公网监备案证第440106500101167  互联网药品信息服务资格证编号（豫）-非经营性-2021-0018  豫公网备案  5646121551455465</p>
+
+                <p>互联网不良信息举报中心：www.12377.cn    酷狗不良信息举报邮箱：jubao_music@kugou.net    客服邮箱：kefu@kugou.com</p>
+
+                <p>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2004-2021 KuGou-Inc.All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

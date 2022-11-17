@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+      <html>
+      <head lang="en">
+      <meta charset="UTF-8">
+      <title></title>
+  <link rel="icon" href="img/青鸟.icon">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    /*主页*/
+    .mainPage{
+      background-color: white;
+      margin:0 auto;
+      position:relative;
+    }
+    /*头部*/
+    .header{
+      width:1500px;
+      height:150px;
+      margin:0 auto;
+      position:relative;
+      border-bottom:1px solid lightgray;
+    }
+    /*头部logo*/
+    .logo{
+      left:208px;
+      display:inline-block;
+      /*background:url("img/logo.png") no-repeat left top;*/
+      top:50px;
+      width:153px;
+      margin:0;
+      position:relative;
+    }
+    /*头部搜索框*/
+    .search_input{
+      top:5px;
+      left:400px;
+      width:300px;
+      height:36px;
+      position:relative;
+      border:1px solid lightgray;
+    }
+    /*头部搜索输入框*/
+    .search_input input{
+      text-indent: 3em;
+      top:6px;
+      left:6px;
+      width:250px;
+      height:22px;
+      position:relative;
+      border:1px solid white;
+      outline:none;
+    }
+    /*头部搜索提交按钮*/
+    .search_input .search_button{
+      display:inline-block;
+      top:1px;
+      right:0;
+      width:36px;
+      height:36px;
+      position:absolute;
+    }
+    /*头部导航列表*/
+    .topNav ul{
+      position:absolute;
+      display:inline-block;
+      left:800px;
+      top:100px;
+      line-height:3px;
+      text-indent:1em;
+    }
+    /*头部导航列表选项*/
+    .topNav>ul>li{
+      float:right;
+      display:inline-block;
+      right:auto;
+      top:auto;
+      text-indent:2em;
+    }
+    .topNav>ul>li a{
+      color:gray;
+      text-decoration: none;
+      font:normal bold 15px verdane,"新宋体";
+    }
+    .topNav>ul>li a:hover{
+      color:rgb(100,200,220);
+      border-radius: 5px;
+    }
+    /*导航登录/注册按钮*/
+    .login_button{
+      display:inline-block;
+      position:relative;
+      top:-30px;
+      left: 1200px;
+      width: 144px;
+      height: 30px;
+      line-height: 28px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      margin: 0 12px 0 0;
+      background: rgb(100,200,220);
+      border-radius: 8px;
+
+    }
+    .login_button:hover{
+      background: rgb(50,160,180);
+      border:2px solid white;
+      border-radius:8px;
+    }
+    /*导航*/
+    .navWrap{
+      background:rgba(0,0,0,0.8);
+      width:auto;
+      height:100px;
+      margin:0 auto;
+    }
+    .nav{
+      width:1500px;
+      height:100px;
+      margin:0 auto;
+    }
+    .homeNav{
+      display: inline-block;
+      float:left;
+      width:900px;
+      height:100px;
+    }
+    .homeNav li{
+      list-style-type: none;
+      float:left;
+      line-height:114px;
+    }
+    .homeNav a{
+      position:relative;
+      text-decoration: none;
+      color:white;
+      border:30px solid rgba(0,0,0,0);
+      font: normal bolder 33px verdana,"新宋体";
+    }
+    .normalOne:hover,.normalTwo:hover,.normalThree:hover,
+    .normalFour,.normalFive:hover,.normalSix:hover{
+      /*background: rgb(50,200,220);*/
+    }
+    .subNav{
+      display:inline-block;
+      width:600px;
+      height:100px;
+      /*background:yellow;*/
+    }
+    .subNav li{
+      list-style-type: none;
+      float:left;
+      line-height:130px;
+    }
+    .subNav a{
+      position:relative;
+      left:60px;
+      text-decoration:none;
+      color:white;
+      /*background: rgb(50,200,220);*/
+      background-size: contain;
+      border:24px solid transparent;
+      font: normal bolder 15px verdana,"新宋体";
+    }
+    .subNav a:hover{
+      color:rgb(50,200,220);
+    }
+
+
+
+
+    footer div{
+      background-color: #333;
+      text-align: center;
+    }
+    .footer_1{
+      color: #b1b3b9;
+    }
+    footer>div>div:first-child{
+      color: #b1b3b9;
+      border: 1px #3d424a solid;
+      text-align: center;
+      padding: 15px 0;
+    }
+    .footer-2{
+      font-size: 12px;
+      color: #b1b3b9;
+      margin-right: 22px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .footer-2:hover,.footer_1:hover{
+      color: rgb(50,200,220);
+    }
+    footer>div>div>p{
+      line-height: 30px;
+      text-align: center;
+      color: #b1b3b9;
+    }
+    #header-article a:hover{
+      color: rgb(50,200,220);
+    }
+    a{
+      text-decoration: none;
+    }
+    /*注册*/
+    #article{
+      margin:50px auto;
+      /*margin-bottom: 50px;*/
+      /*margin-top: 50px;*/
+      width: 1000px;
+      height: 1000px;
+      border: 1px solid rgb(50,200,220);
+      border-top-width: 6px;
+      text-align: center;
+      border-radius: 0 0 6px 6px;
+    }
+    h1{
+      font-size: 60px;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+    #article span{
+      font-size: 35px;
+    }
+    #article div{
+      margin: 30px 0;
+    }
+    #article input{
+      width: 450px;
+      height: 70px;
+      font-size: 30px;
+    }
+    #Gender input{
+      width: 30px;
+      height: 30px;
+      margin: 0 20px;
+    }
+    #agree input{
+      width: 35px;
+      height: 35px;
+    }
+    #VerificationCode{
+      background: rgb(50,200,220);
+      position: relative;
+      left: 70px;
+    }
+    #register{
+      background: rgb(50,200,220);
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+  <h1 class="logo">
+    <a href="">
+      <img src="img/logo.png" alt="青鸟音乐">
+    </a>
+  </h1>
+  <div class="search_input">
+    <input type="text" placeholder="张芸京 偏爱" value="">
+    <div class="search_button">
+      <a href="#">
+        <img src="img/search_icon.png" alt="搜索">
+      </a>
+    </div>
+  </div>
+  <div class="topNav">
+    <ul>
+      <li><a href="#" target="_blank"><span>客服中心</span></a></li>
+      <li><a href="#" target="_blank"><span>广纳贤士</span></a></li>
+      <li><a href="#" target="_blank"><span>商务合作</span></a></li>
+      <li><a href="#" target="_blank"><span>会员中心</span></a></li>
+    </ul>
+    <a class="login_button" id="login_button" href="#">登录 | 注册</a>
+  </div>
+</div>
+<div class="navWrap">
+  <div class="nav">
+    <ul class="homeNav">
+      <li><a href="首页.html" class="normalOne">首页</a></li>
+      <li><a href="榜单.html" class="normalTwo">榜单</a></li>
+      <li><a href="听书.html" class="normalThree">听书</a></li>
+      <li><a href="下载青鸟.html" class="normalFour">下载青鸟</a></li>
+      <li><a href="#" class="normalFive">听歌识曲</a></li>
+      <li><a href="#" class="normalSix">更多</a></li>
+    </ul>
+    <ul class="subNav">
+      <li><a href="#"><img src="" alt="">直播</a></li>
+      <li><a href="#"><img src="" alt="">商城</a></li>
+      <li><a href="#"><img src="" alt="">音乐人</a></li>
+      <li><a href="#"><img src="" alt="">代理商</a></li>
+      <li><a href="#"><img src="" alt="">主播电台</a></li>
+      <li><a href="#"><img src="" alt="">开放平台</a></li>
+    </ul>
+  </div>
+</div>
+<div id="article">
+  <form action="" method="post">
+    <h1>手机注册</h1>
+    <div><span>手机号码</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" pattern="^1[358]\d{9}"/></div>
+    <div><span>短信验证</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"/>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="verification" value="获取短信" id="VerificationCode"/></p>
+    </div>
+    <div><span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password"/></div>
+    <div><span>确认密码</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password"/></div>
+    <div id="Gender"><span>性别:</span>
+      <input type="radio" name="Gender" value="男"/><span>男</span>
+      <input type="radio" name="Gender" value="女"/><span>女</span></div>
+    <div id="agree"><input type="checkbox" name="agree"value="agree" /><span>我已经认真阅读并同意 <a href="">用户协议</a>，<a href="">隐私政策</a></span></div>
+    <input type="submit" name="register" value="注册" id="register"/>
+  </form>
+</div>
+
+<footer>
+  <div>
+    <div>
+      <a href="" class="footer_1">关于青鸟</a>&nbsp;|&nbsp;
+      <a href="" class="footer_1">监督举报</a>&nbsp;|&nbsp;
+      <a href=""class="footer_1">商务合作</a>&nbsp;|&nbsp;
+      <a href="" class="footer_1">广告服务</a>&nbsp;|&nbsp;
+      <a href="" class="footer_1">投诉指引</a>&nbsp;|&nbsp;
+      <a href="" class="footer_1">隐私政策</a>&nbsp;|&nbsp;
+      <a href="" class="footer_1">儿童隐私注册</a>&nbsp;|&nbsp;
+      <a href="" class="footer_1">用户服务协议</a>&nbsp;|&nbsp;
+      <a href="" class="footer_1">青鸟音乐人</a>&nbsp;|&nbsp;
+      <a href="" class="footer_1">青鸟直通车</a>&nbsp;|&nbsp;
+      <a href="" class="footer_1">招聘信息</a>&nbsp;|&nbsp;
+      <a href="" class="footer_1">客服中心</a>&nbsp;|&nbsp;
+      <a href="" class="footer_1">用户体验计划</a>
+    </div>
+    <div>
+      <a href="https://www.kugou.com/ts/album/4094342/" class="footer-2">白眉大侠</a>
+      <a href="https://www.kugou.com/ts/album/18804082/" class="footer-2">茅山捉鬼人</a>
+      <a href="https://www.kugou.com/ts/album/2892259/" class="footer-2">夜听FM</a>
+      <a href="https://www.kugou.com/ts/album/6900644/" class="footer-2">贝瓦故事</a>
+      <a href="https://www.kugou.com/ts/album/37885807/" class="footer-2">文武贝流行钢琴（1）</a>
+      <a href="https://www.kugou.com/ts/album/41731833/" class="footer-2">郭德纲</a>
+      <a href="https://www.kugou.com/ts/album/36794329/" class="footer-2">原创静心舒眠纯音乐</a>
+      <a href="https://www.kugou.com/ts/album/9236581/" class="footer-2">黑水公园</a>
+      <a href="https://www.kugou.com/ts/album/9239516/" class="footer-2">舒烟电台</a>
+      <a href="https://www.kugou.com/ts/album/3035508/" class="footer-2">晚安故事盒子</a>
+      <a href="https://www.kugou.com/ts/album/24771442/" class="footer-2">哄睡故事</a>
+      <a href="https://www.kugou.com/ts/album/43730639/" class="footer-2">隋唐演义</a>
+      <a href="https://www.kugou.com/ts/album/8090766/" class="footer-2">程一电台</a>
+      <a href="https://www.kugou.com/ts/album/43588726/" class="footer-2">宝宝巴土儿歌</a>
+      <a href="https://www.kugou.com/ts/album/37690514/" class="footer-2">这首歌，等你来听</a>
+      <a href="https://www.kugou.com/ts/album/39843428/" class="footer-2">斗罗大陆</a>
+      <a href="https://www.kugou.com/ts/album/8529420/" class="footer-2">水浒传</a>
+      <a href="https://www.kugou.com/ts/album/940008/" class="footer-2">星空下的钢琴曲1</a>
+      <a href="https://www.kugou.com/ts/album/37191013/" class="footer-2">盗墓笔记</a>
+      <a href="https://www.kugou.com/ts/album/18812582/" class="footer-2">抬棺匠</a>
+      <a href="https://www.kugou.com/ts/album/3035508/" class="footer-2">晚安故事盒子</a>
+      <a href="https://www.kugou.com/ts/album/10373617/" class="footer-2">无敌剑域</a>
+      <a href="https://www.kugou.com/ts/album/39145099/" class="footer-2">治疗师｜3D助眠解压沉浸式音乐</a>
+      <a href="https://www.kugou.com/ts/album/36517838/" class="footer-2">小猪佩奇</a>
+      <a href="https://www.kugou.com/ts/album/2470525/" class="footer-2">鬼吹灯经典系列</a>
+      <a href="https://www.kugou.com/ts/album/40025235/" class="footer-2">上门龙婿</a>
+      <a href="https://www.kugou.com/ts/album/39570266/" class="footer-2">超牛女婿</a>
+      <a href="https://www.kugou.com/ts/album/37741217/" class="footer-2">奇葩修真天才</a>
+      <a href="https://www.kugou.com/ts/album/37014995/" class="footer-2">治愈失眠:雷雨声</a>
+      <a href="https://www.kugou.com/ts/album/1078813/" class="footer-2">蕊希电台</a>
+      <a href="https://www.kugou.com/zt/0004/" class="footer-2">成语故事专题</a>
+      <a href="https://www.kugou.com/zt/0005/" class="footer-2">儿童故事专题</a>
+      <a href="https://www.kugou.com/zt/0006/" class="footer-2">鬼吹灯专题</a>
+    </div>
+    <div>
+      <p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@kugou.com</p>
+
+      <p>信息网络传播视听节目许可证 ××××××× 增值电信业务经营许可证豫××-××××××××</p>
+
+      <p>广播电视节目许可证（豫）字第××××号  营业性演出许可证穗天演440106025  营业执照</p>
+
+      <p>穗公网监备案证第440106500101167  互联网药品信息服务资格证编号（豫）-非经营性-2021-0018  豫公网备案  5646121551455465</p>
+
+      <p>互联网不良信息举报中心：www.12377.cn    酷狗不良信息举报邮箱：jubao_music@kugou.net    客服邮箱：kefu@kugou.com</p>
+
+      <p>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2004-2021 KuGou-Inc.All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html></title>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,33 @@
+.s4mobile {
+    display: none;
+}
+
+.mess {
+    width: 200px;
+    padding: 20px 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 7px;
+    position: fixed;
+    left: 50%;
+    margin-left: -100px;
+    top: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        min-width: auto;
+    }
+    .s4mobile {
+        display: block;
+    }
+    .s4pc {
+        display: none;
+    }
+    .mess {
+        width: 160px;
+        padding: 16px 32px;
+        margin-left: -80px;
+    }
+}
